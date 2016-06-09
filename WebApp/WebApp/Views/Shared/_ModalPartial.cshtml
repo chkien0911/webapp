@@ -1,0 +1,125 @@
+﻿@{
+    string title = (new Ivs.Core.Data.IvsMessage("COM_LBL_MESSAGE_TITLE")).MessageText;
+    string closeText = (new Ivs.Core.Data.IvsMessage("COM_LBL_CLOSE")).MessageText;
+    string cancelText = (new Ivs.Core.Data.IvsMessage("COM_LBL_CANCEL")).MessageText;
+    string yesText = (new Ivs.Core.Data.IvsMessage("COM_LBL_YES")).MessageText;
+    string okText = (new Ivs.Core.Data.IvsMessage("COM_LBL_OK")).MessageText;
+    string noText = (new Ivs.Core.Data.IvsMessage("COM_LBL_NO")).MessageText;
+}
+
+<!-- Ok/Close-Modal -->
+  <div class="modal fade" id="close-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+            <h4 class="modal-title">
+                @title
+            </h4>
+        </div>
+        <div class="modal-body">
+            <p>
+                <!-- Message content -->
+            </p>
+        </div>
+        <div class="modal-footer">
+          @*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*@
+            @Html.IvsButton("btnClose", CommonData.ButtonCategory.Close).SetDismissModal()
+            @*<button type="button" class="btn btn-default" data-dismiss="modal">
+                @closeText
+            </button>*@
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Ok and Close-Modal -->
+  <div class="modal fade" id="ok-close-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+            <h4 class="modal-title">
+                @title
+            </h4>
+        </div>
+        <div class="modal-body">
+            <p>
+                <!-- Message content -->
+            </p>
+        </div>
+        <div class="modal-footer">
+          @*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*@
+            @*<button type="button" id="btnOk-ok-close-modal" name="btnOk-ok-close-modal" class="btn btn-primary"">
+                @okText
+            </button>*@
+            @Html.IvsButton("btnOk-ok-close-modal", CommonData.ButtonCategory.Ok)
+            @Html.IvsButton("btnClose", CommonData.ButtonCategory.Close).SetDismissModal()
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+   <!-- Yes and No-Modal -->
+  <div class="modal fade" id="yes-no-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+            <h4 class="modal-title">
+                @title
+            </h4>
+        </div>
+        <div class="modal-body">
+            <p>
+                <!-- Message content -->
+            </p>
+        </div>
+        <div class="modal-footer">
+          @*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*@
+            @*<button type="button" id="btnYes-yes-no-modal" name="btnYes-yes-no-modal" class="btn btn-primary"">
+                @yesText
+            </button>*@
+            @*<button type="button" class="btn btn-default" data-dismiss="modal">
+                @noText
+            </button>*@
+            @Html.IvsButton("btnYes-yes-no-modal", CommonData.ButtonCategory.Yes)
+            @Html.IvsButton("btnNo", CommonData.ButtonCategory.Close).SetDismissModal()
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+     <!-- Yes-No-Cancel-Modal -->
+  <div class="modal fade" id="yes-no-cancel-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+            <h4 class="modal-title">
+                @title
+            </h4>
+        </div>
+        <div class="modal-body">
+            <p>
+                <!-- Message content -->
+            </p>
+        </div>
+        <div class="modal-footer">
+          @*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*@
+            @*<button type="button" id="btnYes-yes-no-cancel-modal" name="btnYes-yes-no-cancel-modal" class="btn btn-primary"">
+                @yesText
+            </button>
+            <button type="button" id="btnNo-yes-no-cancel-modal" name="btnNo-yes-no-cancel-modal" class="btn btn-primary"">
+                @noText
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+                @cancelText
+            </button>*@
+            @Html.IvsButton("btnYes-yes-no-cancel-modal", CommonData.ButtonCategory.Yes)
+            @Html.IvsButton("btnNo-yes-no-cancel-modal", CommonData.ButtonCategory.No)
+            @Html.IvsButton("btnCancel", CommonData.ButtonCategory.Cancel).SetDismissModal()
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->

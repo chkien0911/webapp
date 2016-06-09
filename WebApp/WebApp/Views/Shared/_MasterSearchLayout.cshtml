@@ -1,0 +1,316 @@
+﻿@using Ivs.Controls.CustomControls.Infrastructure;
+@using Ivs.Resources.Common;
+
+@{
+    ViewBag.Title = "_MasterSearchLayout";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<script type="text/javascript">
+
+    function getCheckedIds(tableId) {
+        var checkedIds = [];
+        var table = null;
+        if (typeof tableId === "undefined" || tableId == "") {
+            table = $("#table-result tbody");
+        }
+        else {
+            table = $("#" + tableId + " tbody");
+        }
+        table.find('tr').each(function () {
+            var isChecked = $(this).find('input[name=Select][type=checkbox]').is(':checked');
+            if (isChecked) {
+                var checkedId = $(this).find('.primary-column').val();
+                checkedIds.push(checkedId);
+            }
+        });
+        //        var checkedRows = $("#searchResult input[name=Select][type=checkbox]");
+        //        for (var i = 0; i < checkedRows.length; i++) {
+        //            if (checkedRows[i].checked) {
+        //                var checkedId = $("#ID" + i).val();
+        //                checkedIds.push(checkedId);
+        //                //return checkedId;
+        //            }
+        //        }
+
+        return checkedIds;
+    };
+
+    function copyData() {
+        var checkedIds = getCheckedIds();
+        if (checkedIds.length == 0) {
+            showMessageBox('Ok', '@Html.IvsResource("COM_MSG_NO_ROW_SELECTED")');
+            return;
+        }
+        window.location = '@Url.Action("Copy", (string)ViewContext.RouteData.Values["controller"])' + "/" + encodeURIComponent(checkedIds[0]);
+    };
+
+    function addData() {
+        window.location = '@Url.Action("Add", (string)ViewContext.RouteData.Values["controller"])';
+    };
+
+    function editData() {
+        var checkedIds = getCheckedIds();
+        if (checkedIds.length == 0) {
+            showMessageBox('Ok', '@Html.IvsResource("COM_MSG_NO_ROW_SELECTED")');
+            return;
+        }
+        window.location = '@Url.Action("Edit", (string)ViewContext.RouteData.Values["controller"])' + "/" + encodeURIComponent(checkedIds[0]);
+    };
+
+    function detailData() {
+        var checkedIds = getCheckedIds();
+        if (checkedIds.length == 0) {
+            showMessageBox('Ok', '@Html.IvsResource("COM_MSG_NO_ROW_SELECTED")');
+            return;
+        }
+        window.location = '@Url.Action("Detail", (string)ViewContext.RouteData.Values["controller"])' + "/" + encodeURIComponent(checkedIds[0]);
+    };
+
+    function deleteData() {
+        var checkedIds = getCheckedIds();
+        if (checkedIds.length == 0) {
+            showMessageBox('Ok', '@Html.IvsResource("COM_MSG_NO_ROW_SELECTED")');
+            return;
+        }
+        showMessageBox('YesNo', '@Html.IvsResource("COM_MSG_CONFIRM_DELETE")', deleteCalback);
+        
+    };
+
+    function deleteCalback() {
+        var checkedIds = getCheckedIds();
+        $.ajax({
+            url: '/' + '@ViewContext.RouteData.Values["controller"]' + '/Delete',
+            dataType: "json",
+            type: "DELETE",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({ lstId: checkedIds }),
+            async: false,
+            processData: false,
+            cache: false,
+            success: function (data) {
+                //research
+                $("#searchForm").submit();
+                $("#message-content p").text(data.Message);
+            },
+            error: function (xhr) {
+                $("#message-content p").text('Exception occured!')
+            }
+        });
+    };
+
+    function printData() {
+        $.ajax({
+            url: '/' + '@ViewContext.RouteData.Values["controller"]' + '/Print',
+            type: "POST",
+            success: function (data) {
+                if (arePopupsBlocked()) {
+                    alert('Please allow popups.');
+                }
+                var printWindow = window.open('', '', 'height=400,width=800');
+                printWindow.document.write('<html><head><title>DIV Contents</title>');
+                printWindow.document.write('</head><body >');
+                printWindow.document.write(data);
+                printWindow.document.write('</body></html>');
+                printWindow.document.close();
+                printWindow.print();
+
+//                } else {
+//                    alert('Please allow popups.');
+//                }
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+    };
+
+    function exportXls() {
+        var form = $("#searchForm").serialize();
+        $.ajax({
+            type: "POST",
+            url: '/' + '@ViewContext.RouteData.Values["controller"]' + '/ExportXls',
+            data: form,
+            dataType: "json",
+            //                async: false,
+            success: function (result) {
+                if (result.Url != '') {
+                    //                    var url = "/ExcelPath/Data/" + result.FileName;
+                    $('#iframeExportFile').attr('src', result.Url).appendTo('body').load(function () {
+                    });
+
+                    $("#message-content p").html("Export successul");
+                }
+                else {
+                    alert("Exception occur");
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                setTimeout(function () {
+                }, 800);
+                alert(errorThrown);
+            }
+        }).done(function myfunction() {
+            setTimeout(function () {
+                //                $("#divLoading").dialog("close")
+            }, 800);
+        });
+    };
+
+    function exportXlsx() {
+        var form = $("#searchForm").serialize();
+        $.ajax({
+            type: "POST",
+            url: '/' + '@ViewContext.RouteData.Values["controller"]' + '/ExportXlsx',
+            data: form,
+            dataType: "json",
+            //                async: false,
+            success: function (result) {
+                if (result.FileName != '') {
+                    var url = "/ExcelPath/Data/" + result.FileName;
+                    $('#iframeExportFile').attr('src', url).appendTo('body').load(function () {
+                    });
+
+                    $("#message-content p").html("Export successful");
+                }
+                else {
+                    alert("Exception occur");
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                setTimeout(function () {
+                    //                    $("#divLoading").dialog("close")
+                }, 800);
+            }
+        }).done(function myfunction() {
+            setTimeout(function () {
+                $("#divLoading").dialog("close")
+            }, 800);
+        });
+    };
+
+    
+    function arePopupsBlocked() {
+        var aWindow = window.open(null, "", "width=1,height=1");
+        try {
+            aWindow.close();
+            return false;
+        } catch (e) {
+            return true;
+        }
+    };
+
+</script>
+
+@*<div class="container-fluid">
+    <div class="page-header">
+        @RenderSection("SectionPath", false)
+    </div>
+</div>*@
+
+<div class="container-fluid">
+    @using (Ajax.BeginForm(
+        //Action
+                            @ViewContext.RouteData.Values["action"] as string //"Index"
+        //Controller
+                            , @ViewContext.RouteData.Values["controller"] as string//"Department"
+        //RouteValues
+                            , null
+        //AjaxOptions
+                            , new AjaxOptions { UpdateTargetId = "searchResult" }
+        //HtmlAttributes
+                            , new { @id = "searchForm", @class = "form-horizontal", @role = "form" }))
+    //, new { @id = "searchCondition", @role = "form" }))
+    {
+        
+        <div class="panel-group" id="accordion">
+        @* Search Condition *@
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h5 class="panel-title pull-right">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <span class="glyphicon glyphicon-sort"></span>
+                </a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                        @RenderSection("SectionSearchCondition", false)
+                </div>
+            </div>
+        </div>
+
+        @* Buttons *@
+        @*<div class="panel panel-default">
+            <div class="panel-body">*@
+                @if (IsSectionDefined("SectionSearchButtonGroup"))
+                {
+                    @RenderSection("SectionSearchButtonGroup", false);
+                }
+                else
+                { 
+                    @(Html.IvsButtonGroup(CommonData.Mode.Search))
+                }
+            @*<div class="col-xs-12 col-sm-12 col-md-12">*@
+                        @*<div class="btn-toolbar" role="toolbar">
+                            <div class="btn-group btn-group-sm btn-group-md">
+                                <button type="submit" id="btnSearch" name="btnSearch" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search"></span> Search
+                                </button>
+                                <button type="button" id="btnCopy" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-repeat"></span> Copy
+                                </button>
+                                <button type="button" id="btnAdd" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-plus"></span> Add
+                                </button>
+                                <button type="button" id="btnEdit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-edit"></span> Edit
+                                </button>
+                                <button type="button" id="btnDetail" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-pencil"></span> Detail
+                                </button>
+                                <button type="button" id="btnDelete" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-remove"></span> Delete
+                                </button>
+                                <button type="button" id="btnPrint" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-print"></span> Print
+                                </button>
+                                <div class="btn-group btn-group-sm btn-group-md">
+                                    <button type="button" id="btnExport" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="glyphicon glyphicon-floppy-save"></span> Export
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li>
+                                        <a href="#"><span class="glyphicon glyphicon-save"></span> Xls</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><span class="glyphicon glyphicon-save"></span> Xlsx</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><span class="glyphicon glyphicon-save"></span> Csv</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><span class="glyphicon glyphicon-save"></span> Pdf</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>*@
+        
+        
+    
+
+        <div class="panel panel-default">
+            <div id="searchResult">
+            
+                @RenderSection("SectionSearchResult", false)
+            </div>
+        </div>
+
+        </div>
+        
+        @RenderBody()
+    
+    }
+</div>

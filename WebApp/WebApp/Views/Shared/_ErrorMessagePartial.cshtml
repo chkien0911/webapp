@@ -1,0 +1,8 @@
+﻿<div class="message-success" id="message-content">
+    <p>
+    @if (!CommonMethod.IsNullOrEmpty(TempData[CommonData.MessageArea.MsgContent]))
+    {
+        @TempData[CommonData.MessageArea.MsgContent]
+    }
+    </p>
+</div>

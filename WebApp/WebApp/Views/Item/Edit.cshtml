@@ -1,0 +1,62 @@
+﻿@model Ivs.Models.Master.MS_ItemModel
+@using Ivs.Models.Master;
+
+@{
+    ViewBag.Title = "Item Management";
+}
+
+@section SectionEditHeader {
+     
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#basicinfomation" role="tab" data-toggle="tab">Home</a></li>
+        <li><a href="#unitconverter" role="tab" data-toggle="tab">Profile</a></li>
+    </ul>
+
+    <div class="tab-content">
+    <div class="tab-pane fade active in" id="basicinfomation">
+        <div class="form-group form-group-sm">
+            <!-- Hidden Id -->
+            @Html.IvsHiddenFor(model => model.ID).SetPrimary()
+
+
+            @Html.IvsLabelFor(model => model.Code)
+            @Html.IvsTextBoxFor(model => model.Code).SetUnique().SetFocus()
+
+            @Html.IvsLabelFor(model => model.Name1)
+            @Html.IvsTextBoxFor(model => model.Name1).SetFocus()
+                        
+        </div>
+
+        <div class="form-group form-group-sm">
+            @Html.IvsLabelFor(model => model.Name2)
+            @Html.IvsTextBoxFor(model => model.Name2)
+
+            @Html.IvsLabelFor(model => model.GroupCode)
+            @Html.IvsDropDownListFor(model => model.GroupCode, ViewBag.GroupCodeList as SelectList)
+        </div>
+        <div class="form-group form-group-sm">
+            @Html.IvsLabelFor(model => model.InvUnitCode)
+            @Html.IvsDropDownListFor(model => model.InvUnitCode, ViewBag.InvUnitCodeList as SelectList)
+
+            @Html.IvsLabel("Date", "Date")
+            @Html.IvsDateTime("Date")
+        </div>
+    </div>
+    <div class="tab-pane fade in" id="unitconverter">
+        @(
+            Html.HtmlHelperFor<MS_UnitConvertModel>().IvsDataGrid<MS_UnitConvertModel>(this.Model.UnitConverts)
+                .Columns(col =>
+                {
+                    col.Add(x => x.ID).SetPrimary().SetHidden();
+                    col.Add(x => x.FromUnit).SetAllowInput(true, true, ViewBag.Units as SelectList);
+                    col.Add(x => x.ToUnit).SetAllowInput(true, true, ViewBag.Units as SelectList);
+                    col.Add(x => x.Factor).SetInputType(CommonData.InputWebType.number).SetAllowInput();
+                    col.Add(x => x.Remark);
+                })
+                .SetSortable(false)
+        )
+    </div>
+    </div>
+}
+
+

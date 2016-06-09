@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgcInventory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dgcInventory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="colSelect.Caption" xml:space="preserve">
+    <value> </value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkSelect.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colSelect.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colSelect.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colSelect.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="colLineNumber.Caption" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="colLineNumber.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colLineNumber.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colLineNumber.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="colOrderNo.Caption" xml:space="preserve">
+    <value>Order No.</value>
+  </data>
+  <data name="resOrderNo.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colOrderNo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colOrderNo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colOrderNo.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="colDocumentNo.Caption" xml:space="preserve">
+    <value>Document No.</value>
+  </data>
+  <data name="resDocumentNo.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="resDocumentNo.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colDocumentNo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colDocumentNo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colDocumentNo.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colDocumentDate.Caption" xml:space="preserve">
+    <value>Document Date</value>
+  </data>
+  <data name="colDocumentDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colDocumentDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colDocumentDate.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colItemType.Caption" xml:space="preserve">
+    <value>Item Type</value>
+  </data>
+  <data name="resItemType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resItemType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colItemType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colItemType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colItemType.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="colTransferType.Caption" xml:space="preserve">
+    <value>TransferType</value>
+  </data>
+  <data name="resTransferType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resTransferType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colTransferType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colTransferType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="colTransferType.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colItemCode.Caption" xml:space="preserve">
+    <value>Item Code</value>
+  </data>
+  <data name="resItem.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resItem.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colItemCode.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colItemCode.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="colItemCode.Width" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="colItemName.Caption" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="colItemName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colItemName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="colItemName.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="colUnit.Caption" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="resUnit.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resUnit.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colUnit.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colUnit.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="colUnit.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="colStockQty.Caption" xml:space="preserve">
+    <value>Stock Qty</value>
+  </data>
+  <data name="resQuantity.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colStockQty.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colStockQty.VisibleIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="colQuantity.Caption" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="colQuantity.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colQuantity.VisibleIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="colQuantity.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="colUnitPrice.Caption" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="resUnitPrice.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colUnitPrice.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colUnitPrice.VisibleIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="colUnitPrice.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colAmount.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="resAmount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="colAmount.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colPruductionLine.Caption" xml:space="preserve">
+    <value>Production Line</value>
+  </data>
+  <data name="resProductionLine.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resProductionLine.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colPruductionLine.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colPruductionLine.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="colPruductionLine.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="colQualityStatus.Caption" xml:space="preserve">
+    <value>Quality Status</value>
+  </data>
+  <data name="resQualityStatus.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resQualityStatus.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colQualityStatus.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colQualityStatus.VisibleIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="colQualityStatus.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colErrorReason.Caption" xml:space="preserve">
+    <value>Error Reason</value>
+  </data>
+  <data name="resErrorReason.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resErrorReason.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colErrorReason.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colErrorReason.VisibleIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="colErrorReason.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="colRemark.Caption" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+  <data name="colRemark.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colRemark.VisibleIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="colRemark.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="colLotNo.Caption" xml:space="preserve">
+    <value>Lot No.</value>
+  </data>
+  <data name="resLotNo.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colLotNo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colLotNo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="colLotNo.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="colProcessType.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="resProcessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resProcessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="colProcessType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colProcessType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colProcessType.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="resItemGrid.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resItemGrid.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="dgcInventory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1348, 371</value>
+  </data>
+  <data name="dgcInventory.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgcInventory.Name" xml:space="preserve">
+    <value>dgcInventory</value>
+  </data>
+  <data name="&gt;&gt;dgcInventory.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dgcInventory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgcInventory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1348, 371</value>
+  </data>
+  <data name="&gt;&gt;dgvInventory.Name" xml:space="preserve">
+    <value>dgvInventory</value>
+  </data>
+  <data name="&gt;&gt;dgvInventory.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridView, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colSelect.Name" xml:space="preserve">
+    <value>colSelect</value>
+  </data>
+  <data name="&gt;&gt;colSelect.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;chkSelect.Name" xml:space="preserve">
+    <value>chkSelect</value>
+  </data>
+  <data name="&gt;&gt;chkSelect.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemCheckEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colLineNumber.Name" xml:space="preserve">
+    <value>colLineNumber</value>
+  </data>
+  <data name="&gt;&gt;colLineNumber.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colOrderNo.Name" xml:space="preserve">
+    <value>colOrderNo</value>
+  </data>
+  <data name="&gt;&gt;colOrderNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resOrderNo.Name" xml:space="preserve">
+    <value>resOrderNo</value>
+  </data>
+  <data name="&gt;&gt;resOrderNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colDocumentNo.Name" xml:space="preserve">
+    <value>colDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;colDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resDocumentNo.Name" xml:space="preserve">
+    <value>resDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;resDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colDocumentDate.Name" xml:space="preserve">
+    <value>colDocumentDate</value>
+  </data>
+  <data name="&gt;&gt;colDocumentDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colItemType.Name" xml:space="preserve">
+    <value>colItemType</value>
+  </data>
+  <data name="&gt;&gt;colItemType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resItemType.Name" xml:space="preserve">
+    <value>resItemType</value>
+  </data>
+  <data name="&gt;&gt;resItemType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemCodeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colTransferType.Name" xml:space="preserve">
+    <value>colTransferType</value>
+  </data>
+  <data name="&gt;&gt;colTransferType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resTransferType.Name" xml:space="preserve">
+    <value>resTransferType</value>
+  </data>
+  <data name="&gt;&gt;resTransferType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemCodeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colItemCode.Name" xml:space="preserve">
+    <value>colItemCode</value>
+  </data>
+  <data name="&gt;&gt;colItemCode.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resItem.Name" xml:space="preserve">
+    <value>resItem</value>
+  </data>
+  <data name="&gt;&gt;resItem.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemProductLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colItemName.Name" xml:space="preserve">
+    <value>colItemName</value>
+  </data>
+  <data name="&gt;&gt;colItemName.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colUnit.Name" xml:space="preserve">
+    <value>colUnit</value>
+  </data>
+  <data name="&gt;&gt;colUnit.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resUnit.Name" xml:space="preserve">
+    <value>resUnit</value>
+  </data>
+  <data name="&gt;&gt;resUnit.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colStockQty.Name" xml:space="preserve">
+    <value>colStockQty</value>
+  </data>
+  <data name="&gt;&gt;colStockQty.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resQuantity.Name" xml:space="preserve">
+    <value>resQuantity</value>
+  </data>
+  <data name="&gt;&gt;resQuantity.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
+    <value>colQuantity</value>
+  </data>
+  <data name="&gt;&gt;colQuantity.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colUnitPrice.Name" xml:space="preserve">
+    <value>colUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;colUnitPrice.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resUnitPrice.Name" xml:space="preserve">
+    <value>resUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;resUnitPrice.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colAmount.Name" xml:space="preserve">
+    <value>colAmount</value>
+  </data>
+  <data name="&gt;&gt;colAmount.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resAmount.Name" xml:space="preserve">
+    <value>resAmount</value>
+  </data>
+  <data name="&gt;&gt;resAmount.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colPruductionLine.Name" xml:space="preserve">
+    <value>colPruductionLine</value>
+  </data>
+  <data name="&gt;&gt;colPruductionLine.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resProductionLine.Name" xml:space="preserve">
+    <value>resProductionLine</value>
+  </data>
+  <data name="&gt;&gt;resProductionLine.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemProductionLineDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colQualityStatus.Name" xml:space="preserve">
+    <value>colQualityStatus</value>
+  </data>
+  <data name="&gt;&gt;colQualityStatus.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resQualityStatus.Name" xml:space="preserve">
+    <value>resQualityStatus</value>
+  </data>
+  <data name="&gt;&gt;resQualityStatus.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemCodeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colErrorReason.Name" xml:space="preserve">
+    <value>colErrorReason</value>
+  </data>
+  <data name="&gt;&gt;colErrorReason.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resErrorReason.Name" xml:space="preserve">
+    <value>resErrorReason</value>
+  </data>
+  <data name="&gt;&gt;resErrorReason.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colRemark.Name" xml:space="preserve">
+    <value>colRemark</value>
+  </data>
+  <data name="&gt;&gt;colRemark.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resRemark.Name" xml:space="preserve">
+    <value>resRemark</value>
+  </data>
+  <data name="&gt;&gt;resRemark.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colLotNo.Name" xml:space="preserve">
+    <value>colLotNo</value>
+  </data>
+  <data name="&gt;&gt;colLotNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resLotNo.Name" xml:space="preserve">
+    <value>resLotNo</value>
+  </data>
+  <data name="&gt;&gt;resLotNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colProcessType.Name" xml:space="preserve">
+    <value>colProcessType</value>
+  </data>
+  <data name="&gt;&gt;colProcessType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridColumn, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resProcessType.Name" xml:space="preserve">
+    <value>resProcessType</value>
+  </data>
+  <data name="&gt;&gt;resProcessType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;resItemGrid.Name" xml:space="preserve">
+    <value>resItemGrid</value>
+  </data>
+  <data name="&gt;&gt;resItemGrid.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsRepositoryItemGridLookUpEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
+    <value>repositoryItemGridLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGridView, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>IvsInventoryGridControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsUserControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

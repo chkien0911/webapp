@@ -1,0 +1,35 @@
+﻿@model IPagedList<Ivs.Models.Master.MS_DepartmentModel>
+@using Ivs.Controls.CustomControls.Infrastructure;
+@using Ivs.Models.Master;
+
+@{
+    ViewBag.Title = "Department Management";
+    //Layout = "~/Views/Shared/_MasterSearchLayout.cshtml";
+}
+
+@section SectionSearchCondition {
+
+                    <div class="form-group form-group-sm">
+                    @*<div class="row">*@
+                            @Html.IvsLabel("Code", "Code")
+                            @Html.IvsTextBox("Code").SetWidth(CommonData.Width.Small).SetFocus()
+
+                            @Html.IvsLabel("Name1", "Department Name (VN)", new { @class = "col-sm-offset-1 col-md-offset-1" })
+                            @Html.IvsTextBox("Name1")
+                        
+                    </div>
+
+                    <div class="form-group form-group-sm">
+                    @*<div class="row">*@
+                        @Html.IvsLabel("Name2", "Department Name (EN)")
+                        @Html.IvsTextBox("Name2").SetWidth(CommonData.Width.Medium)
+                    </div>
+}
+
+@section SectionSearchResult {
+    @* Grid result *@
+    @Html.Partial("DepartmentPartial", null)
+    @* Paging *@
+    
+}
+

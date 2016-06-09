@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblErrorMessage.Appearance.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gray</value>
+  </data>
+  <data name="lblErrorMessage.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="lblErrorMessage.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lblErrorMessage.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblErrorMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblErrorMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblErrorMessage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 0, 0</value>
+  </data>
+  <data name="lblErrorMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblErrorMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblErrorMessage.Text" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Name" xml:space="preserve">
+    <value>lblErrorMessage</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Parent" xml:space="preserve">
+    <value>pnlErr</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlErr.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlErr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlErr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 27</value>
+  </data>
+  <data name="pnlErr.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlErr.Name" xml:space="preserve">
+    <value>pnlErr</value>
+  </data>
+  <data name="&gt;&gt;pnlErr.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsPanel, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pnlErr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlErr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="pnlMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 183</value>
+  </data>
+  <data name="pnlMain.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnlMain.Name" xml:space="preserve">
+    <value>pnlMain</value>
+  </data>
+  <data name="&gt;&gt;pnlMain.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsPanel, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pnlMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACSElEQVQ4T51PXUhTYRh+8yd1
+        iRdpzmZRdjFvTIsaFQmOqItKIehHCnYj5yJEzZusKRa26iJaUc1yDh2FkOTPMHGkRhYZTDvYDxw2nNgJ
+        ErYMDgMDYdHX+4yEHYOCDjzn+Z7nfd7nfIeEELT79ixZ7szRvnaVyt1fqKIrQtbuqJshg6HhY44c8tgD
+        Eq/kgr2uT1TeuQDILlUIMDT8fxUYOGTfc2++g4EF+WbopwBDw8ecb2D44wY7byi0yxmy24aiKrPMgJav
+        f/whkvUZXwRzO/K6Xyi5+s5ysDOstAS+x7dfey8zCHz57bJI1hcml+IHOmYV5HUFxa0BZ934olbVNR/h
+        s4NBDPni6yUB/q0dlTyXhqMa8rqCovMv/c1vYqKsLRDc1vTKzCD25ObJmABDw8e8cewbPL+uwFT/bKrB
+        vyA2N47N8DmjsGGUGG4+y2Bo+JhLT1SBvK4gT/L5a4c/i6Jz/mCu5DPn1gxggQpqRxIMDR9zW09IIK8r
+        yLH1Ois9H7TSSxMRPjuyT/ekZp7w0gqg4Ze0TkSst6Y15HUFhupHlk11Q8qhx6rYUD8yl3XqoYOXzYwM
+        MDT8/d45YTw7qCCvK1h7vJvSjnnsW1peqGUDi2L9lelIljQYTD/pnQFDm3u/CmPTcxU55HUFxE9KcZVh
+        zdH79nVSv2J6ENY29sfi+U+XRX5fLJ7nCmuZNX0K5sghv7ogjb0CRiltragma5uHDt8dpSPtUwmGhk+0
+        g1HISF9dkMJmNsPIMP0F+EgOI1VXsCL+h38BHScKxI2+sksAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 10</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsSimpleButton, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>ivsPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAMuSURBVDhPTZPrU0wBGMbXXeiDO+Mf0Acl90vGrfjQmEm1WaJisxnl0mByN9hsaIxqtAaVbGst
+        SZLbrlOrllJtSMq9CWOM3a2tbbV2rcf7nknjwzPnzJl5fs97OxKJRDKANIg0hDSUNIw0vE9+9BxBGkka
+        RfL/T/ydfZJB9dkKkyVbgfqziXh2ZhNqMxPw9OQGmE/EokopQ+VRKSoOR8F4IAIP01bh/p5wFKeE1vSB
+        JUMacxT44/qEP8738HW/ga+rBb7OJnhtFnitz+D5bobnWyV+fTHA3X4X7k+3cGdHGAgwmisY2pCVCJ/z
+        A7xfy+D9XAJP23X8+lAE97vL6G29iJ/NuXC9zIZBGQnhRCRcr/NRum05A8YyYFgdlc3J3s83RbPnoxbu
+        t2RuYbOazFl4lB6N81FByFkVAEt+Ckq2LmXAOAYM5565bE+bnpLZXCgm974i84tsCCoyr54GXdxs6JKW
+        wNGoRnHSIgaMFwE1p+LEnj1kNufI0W44Lib/pGTTKRnUZNbHz0ZeTBC+Cip0N2TiemIIAyYwwM+sWo/f
+        NDBDugwaeQjORQdByJCh4mQMclcH4lr8HORHBaJJsxuO6n3oqk3HtY3zGTCRASOq09eK0357W4nbO8NQ
+        vjMUF2OCkRtByVT2ZUo20jq7nh6F3ZiCzieHcDV+LgMmMWCk6dgacVW97zR4X5YBPVVRIl8omotkwdAp
+        FqOzVoUOMtsfJKHj8V5oN8xiwGQGjKo8IqU9m8Rpu5ovoLX4CArJqF0bjLzo6fgmKNEh7CDzFljvymGv
+        SMWV2Bn9AH/hUCQdiRE9lkw461XoaTyLV9o05IYH4LVuDzordsFGZts9Oax34mA3JIsBFD6FK/A37o8Q
+        L8xZRxOuOYYu80F003tP8yU4qvaLZXOytSwOP0rXwXZ/MwpoLv2AB3Tf7o+34GrJQ0+TGs7nWXA2nBan
+        7TAfFnu2C6liMput5QkokAb2A/yKt6+oKk9dibLtYShNXoabWxbjxuYQ6DctgC5hHrQ0TE3sTFyhmXBy
+        gXQazoRPraMKxnALA3mVfT8G3zafJ18YHwnvmVfF02Zxz//E5sF/AV7IORwDiWeCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 10</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsSimpleButton, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>ivsPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ivsPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ivsPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 210</value>
+  </data>
+  <data name="ivsPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 42</value>
+  </data>
+  <data name="ivsPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ivsPanel1.Name" xml:space="preserve">
+    <value>ivsPanel1</value>
+  </data>
+  <data name="&gt;&gt;ivsPanel1.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsPanel, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ivsPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ivsPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>519, 252</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Infomation</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InfomationForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IVSForm, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

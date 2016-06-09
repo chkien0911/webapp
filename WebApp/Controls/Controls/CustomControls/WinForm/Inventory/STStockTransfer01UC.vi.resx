@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblPostedPersonTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lblPostedPersonTo.Text" xml:space="preserve">
+    <value>Người Lập</value>
+  </data>
+  <data name="lblWarehouseTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="lblWarehouseTo.Text" xml:space="preserve">
+    <value>Kho</value>
+  </data>
+  <data name="lblArrivingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblArrivingDate.Text" xml:space="preserve">
+    <value>Ngày Nhập</value>
+  </data>
+  <data name="lblPostedDateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lblPostedDateTo.Text" xml:space="preserve">
+    <value>Ngày Lập</value>
+  </data>
+  <data name="lblArrivingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="lblArrivingPerson.Text" xml:space="preserve">
+    <value>Người Nhập</value>
+  </data>
+  <data name="gcTo.Text" xml:space="preserve">
+    <value>Nhập</value>
+  </data>
+  <data name="gcFrom.Text" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="lblPostedPersonFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lblPostedPersonFrom.Text" xml:space="preserve">
+    <value>Người Lập</value>
+  </data>
+  <data name="lblPostedDateFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lblPostedDateFrom.Text" xml:space="preserve">
+    <value>Ngày Lập</value>
+  </data>
+  <data name="lblShippingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblShippingPerson.Text" xml:space="preserve">
+    <value>Người Xuất</value>
+  </data>
+  <data name="lblShippingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblShippingDate.Text" xml:space="preserve">
+    <value>Ngày Xuất</value>
+  </data>
+  <data name="lblWarehouseFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="lblWarehouseFrom.Text" xml:space="preserve">
+    <value>Kho</value>
+  </data>
+  <data name="lblPrinted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lblPrinted.Text" xml:space="preserve">
+    <value>Số Lần In</value>
+  </data>
+  <data name="lblDocumentNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="lblDocumentNo.Text" xml:space="preserve">
+    <value>Số Chứng Từ</value>
+  </data>
+  <data name="lblDocumentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="lblDocumentType.Text" xml:space="preserve">
+    <value>Loại Chứng Từ</value>
+  </data>
+  <data name="lblDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Phòng Ban</value>
+  </data>
+  <data name="lblQualityStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="lblQualityStatus.Text" xml:space="preserve">
+    <value>Trạng Thái</value>
+  </data>
+  <data name="txtDocumentType.EditValue" xml:space="preserve">
+    <value>Chuyển Hàng Đến Kho</value>
+  </data>
+  <data name="txtDocumentType2.EditValue" xml:space="preserve">
+    <value>Nhận Hàng Từ Kho</value>
+  </data>
+  <data name="btnSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA95JREFUSEu1lX1M
+        E3cYxw/L4kJ8q0OGQkh8WczExAg2IyS+IFaIoPGlgDZFIFhZNJtsmbolZtEFdP5h+GeRpmZL5qL/qBNf
+        hyl9oSAt1NL24CrVitAKXF8Vg2XbP+fznHezNMcRtuyXfNLLPc/z+f5+vV5KMAzzvzLtWp13hNh5rJ/Y
+        /fVjQnnKR1T/QBO1jSGZ+lxEC1BAjAOvtVjDHuzFGZxlA1CUCBZ5uADpwdOjzbUNY74fr9Ddl9vo+1ZP
+        1OQZmbAYHa+NP90IP8Ia9mDvlIB4mRDQLC076X1wrGnI3mId0+lI2mTzRjtfRGK98RjJiAF7sBdncJYN
+        KD7SK0rJF67murMD9j8ctB7lhv6AaSj45lFiAN7TuQKGz88N2HEGZ9mAjVUd07KpulMmr7P4bnSNsDtH
+        rE8jHYlyHqy1WEb12+ssfpxlA2QVOjG09Rcc3W19dDsfMBNtfYH2b5qcNpxlA9buuiUGdbHlSWt8gIkK
+        tvf5xrsGAxO2xBM8oyd6sOfSHa8OZ9mAT4quixFr7R2DXb3f4TMBMc9wCJ4D9BjIQCfOsgErtl0TI9bm
+        pM14bD5ASBwP9pj7g104ywaslP8uBgXH1RupYMdsAi7fH2zHWe4ruieG9svzvfbupxEbH+ALx+xCYgRr
+        5sehruMXXCTOsgGfluinZU2pQZarMPuNrlBP50DIggH4IIXkCD54c1/YvqHM7MdZNiA/P18Mac7OazeV
+        J91OcmicfOgJWyn/uFVIPhqddPqCMXfld25y/T5b87o91ncvmoCUZ3FeXt6evRWHf6motzHVpwZdPQOv
+        SPgVuelXf1IoHIlOOsZeTpLh1395Bkcmn6jPPO//7ID7wYZylzRHwb3JAmIkFeTlCkWZ5vbtu0yBXHF1
+        fcnNu9vUPn/jzyHK7Jhwhsb/HgKGHzrfkE2/RT3b6/z+jVXDzfkqrxQCCLGANJCryssrNK2tembz5i2/
+        pqSkVGWuqUktqKVlWw8FtQAFxDjwWou1TdV+AgIIsYB0kNfs36/UmEwWpqBgK8rVycnJaRBAgIQoVIcE
+        wdpMAUtBflipVGksFpIpLJSj/CjI0wFiYVrOfwrIAPlRlapK43B4Gbm8COVfgXiZRCIhkpKSuP+52S02
+        IDs7mwB5fWVljcbtfsEUFe1A+bcgzvy3Yn6xAbAkubm5J7zeMFNcXIry70G8Eu5/wJEch4RjThy4C54p
+        iw9YkpWVVZqRkXEa5A0g3wL3VgEYshzIAjKBpUAa8BGwCJgPpABzAdwIH/zP4gMWAKkACpZxn+nAxwAK
+        sbYYQCn2zgNQ/CGQKJ9yCoZhiLdThCtwE+pw+gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Tìm Kiếm</value>
+  </data>
+  <data name="lblRemark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblRemark.Text" xml:space="preserve">
+    <value>Mô Tả</value>
+  </data>
+</root>

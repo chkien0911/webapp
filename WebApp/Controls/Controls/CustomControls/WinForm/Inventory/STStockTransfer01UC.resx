@@ -1,0 +1,1362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cboPostedPersonTo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cboPostedPersonTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 50</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="cboPostedPersonTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboPostedPersonTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboPostedPersonTo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonTo.Name" xml:space="preserve">
+    <value>cboPostedPersonTo</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonTo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboArrivingPerson.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cboArrivingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 76</value>
+  </data>
+  <data name="cboArrivingPerson.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboArrivingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboArrivingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboArrivingPerson.Name" xml:space="preserve">
+    <value>cboArrivingPerson</value>
+  </data>
+  <data name="&gt;&gt;cboArrivingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsEmployeeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboArrivingPerson.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;cboArrivingPerson.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblMandatoryWHTo.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryWHTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 28</value>
+  </data>
+  <data name="lblMandatoryWHTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryWHTo.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="lblMandatoryWHTo.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryWHTo.Name" xml:space="preserve">
+    <value>lblMandatoryWHTo</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryWHTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryWHTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryWHTo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cboWarehouseTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 25</value>
+  </data>
+  <data name="cboWarehouseTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboWarehouseTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="cboWarehouseTo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseTo.Name" xml:space="preserve">
+    <value>cboWarehouseTo</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseTo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblPostedPersonTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 53</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPostedPersonTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblPostedPersonTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lblPostedPersonTo.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="lblPostedPersonTo.Text" xml:space="preserve">
+    <value>Posted Person</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonTo.Name" xml:space="preserve">
+    <value>lblPostedPersonTo</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonTo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblWarehouseTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 28</value>
+  </data>
+  <data name="lblWarehouseTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lblWarehouseTo.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="lblWarehouseTo.Text" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseTo.Name" xml:space="preserve">
+    <value>lblWarehouseTo</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseTo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dtpPostedDateTo.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dtpPostedDateTo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dtpPostedDateTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 51</value>
+  </data>
+  <data name="dtpPostedDateTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="dtpPostedDateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtpPostedDateTo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateTo.Name" xml:space="preserve">
+    <value>dtpPostedDateTo</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDateEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateTo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblArrivingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 80</value>
+  </data>
+  <data name="lblArrivingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="lblArrivingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="lblArrivingDate.Text" xml:space="preserve">
+    <value>Arriving Date</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingDate.Name" xml:space="preserve">
+    <value>lblArrivingDate</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingDate.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingDate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblPostedDateTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 54</value>
+  </data>
+  <data name="lblPostedDateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="lblPostedDateTo.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="lblPostedDateTo.Text" xml:space="preserve">
+    <value>Posted Date</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateTo.Name" xml:space="preserve">
+    <value>lblPostedDateTo</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateTo.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateTo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dtpArrivingDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dtpArrivingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 77</value>
+  </data>
+  <data name="dtpArrivingDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="dtpArrivingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtpArrivingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtpArrivingDate.Name" xml:space="preserve">
+    <value>dtpArrivingDate</value>
+  </data>
+  <data name="&gt;&gt;dtpArrivingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDateEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpArrivingDate.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;dtpArrivingDate.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblArrivingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 79</value>
+  </data>
+  <data name="lblArrivingPerson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblArrivingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="lblArrivingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="lblArrivingPerson.Text" xml:space="preserve">
+    <value>Arriving Person</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingPerson.Name" xml:space="preserve">
+    <value>lblArrivingPerson</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingPerson.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblArrivingPerson.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblMandatoryArrivingPerson.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryArrivingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 79</value>
+  </data>
+  <data name="lblMandatoryArrivingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryArrivingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="lblMandatoryArrivingPerson.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingPerson.Name" xml:space="preserve">
+    <value>lblMandatoryArrivingPerson</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingPerson.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingPerson.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblMandatoryArrivingDate.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryArrivingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 80</value>
+  </data>
+  <data name="lblMandatoryArrivingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryArrivingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="lblMandatoryArrivingDate.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingDate.Name" xml:space="preserve">
+    <value>lblMandatoryArrivingDate</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingDate.Parent" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryArrivingDate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="gcTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 110</value>
+  </data>
+  <data name="gcTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>423, 105</value>
+  </data>
+  <data name="gcTo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gcTo.Text" xml:space="preserve">
+    <value>Arriving</value>
+  </data>
+  <data name="&gt;&gt;gcTo.Name" xml:space="preserve">
+    <value>gcTo</value>
+  </data>
+  <data name="&gt;&gt;gcTo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGroupControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gcTo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gcTo.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cboPostedPersonFrom.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cboPostedPersonFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 51</value>
+  </data>
+  <data name="cboPostedPersonFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboPostedPersonFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboPostedPersonFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonFrom.Name" xml:space="preserve">
+    <value>cboPostedPersonFrom</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;cboPostedPersonFrom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboShippingPerson.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cboShippingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 77</value>
+  </data>
+  <data name="cboShippingPerson.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboShippingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboShippingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboShippingPerson.Name" xml:space="preserve">
+    <value>cboShippingPerson</value>
+  </data>
+  <data name="&gt;&gt;cboShippingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsEmployeeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboShippingPerson.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;cboShippingPerson.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblPostedPersonFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 54</value>
+  </data>
+  <data name="lblPostedPersonFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblPostedPersonFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lblPostedPersonFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="lblPostedPersonFrom.Text" xml:space="preserve">
+    <value>Posted Person</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonFrom.Name" xml:space="preserve">
+    <value>lblPostedPersonFrom</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblPostedPersonFrom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dtpPostedDateFrom.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dtpPostedDateFrom.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dtpPostedDateFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 51</value>
+  </data>
+  <data name="dtpPostedDateFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="dtpPostedDateFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtpPostedDateFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateFrom.Name" xml:space="preserve">
+    <value>dtpPostedDateFrom</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDateEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;dtpPostedDateFrom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblPostedDateFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 54</value>
+  </data>
+  <data name="lblPostedDateFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="lblPostedDateFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="lblPostedDateFrom.Text" xml:space="preserve">
+    <value>Posted Date</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateFrom.Name" xml:space="preserve">
+    <value>lblPostedDateFrom</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblPostedDateFrom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblMandatoryShippingPerson.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryShippingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 80</value>
+  </data>
+  <data name="lblMandatoryShippingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryShippingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="lblMandatoryShippingPerson.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingPerson.Name" xml:space="preserve">
+    <value>lblMandatoryShippingPerson</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingPerson.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingPerson.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblMandatoryShippingDate.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryShippingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 80</value>
+  </data>
+  <data name="lblMandatoryShippingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryShippingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="lblMandatoryShippingDate.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingDate.Name" xml:space="preserve">
+    <value>lblMandatoryShippingDate</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingDate.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryShippingDate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblShippingPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 80</value>
+  </data>
+  <data name="lblShippingPerson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblShippingPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblShippingPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="lblShippingPerson.Text" xml:space="preserve">
+    <value>Shipping Person</value>
+  </data>
+  <data name="&gt;&gt;lblShippingPerson.Name" xml:space="preserve">
+    <value>lblShippingPerson</value>
+  </data>
+  <data name="&gt;&gt;lblShippingPerson.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblShippingPerson.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblShippingPerson.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dtpShippingDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dtpShippingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 77</value>
+  </data>
+  <data name="dtpShippingDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="dtpShippingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtpShippingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtpShippingDate.Name" xml:space="preserve">
+    <value>dtpShippingDate</value>
+  </data>
+  <data name="&gt;&gt;dtpShippingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDateEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpShippingDate.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;dtpShippingDate.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblShippingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 80</value>
+  </data>
+  <data name="lblShippingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="lblShippingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="lblShippingDate.Text" xml:space="preserve">
+    <value>Shipping Date</value>
+  </data>
+  <data name="&gt;&gt;lblShippingDate.Name" xml:space="preserve">
+    <value>lblShippingDate</value>
+  </data>
+  <data name="&gt;&gt;lblShippingDate.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblShippingDate.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblShippingDate.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cboWarehouseFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 25</value>
+  </data>
+  <data name="cboWarehouseFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboWarehouseFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="cboWarehouseFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseFrom.Name" xml:space="preserve">
+    <value>cboWarehouseFrom</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;cboWarehouseFrom.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblWarehouseFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 28</value>
+  </data>
+  <data name="lblWarehouseFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lblWarehouseFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="lblWarehouseFrom.Text" xml:space="preserve">
+    <value>Warehouse</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseFrom.Name" xml:space="preserve">
+    <value>lblWarehouseFrom</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseFrom.Parent" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;lblWarehouseFrom.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="gcFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 110</value>
+  </data>
+  <data name="gcFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 105</value>
+  </data>
+  <data name="gcFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gcFrom.Text" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="&gt;&gt;gcFrom.Name" xml:space="preserve">
+    <value>gcFrom</value>
+  </data>
+  <data name="&gt;&gt;gcFrom.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsGroupControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gcFrom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gcFrom.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtPrintCount.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtPrintCount.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtPrintCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 31</value>
+  </data>
+  <data name="txtPrintCount.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtPrintCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="txtPrintCount.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="&gt;&gt;txtPrintCount.Name" xml:space="preserve">
+    <value>txtPrintCount</value>
+  </data>
+  <data name="&gt;&gt;txtPrintCount.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPrintCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtPrintCount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblPrinted.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 34</value>
+  </data>
+  <data name="lblPrinted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="lblPrinted.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="lblPrinted.Text" xml:space="preserve">
+    <value>Print Count</value>
+  </data>
+  <data name="&gt;&gt;lblPrinted.Name" xml:space="preserve">
+    <value>lblPrinted</value>
+  </data>
+  <data name="&gt;&gt;lblPrinted.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPrinted.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPrinted.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblMandatoryDocumentNo.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryDocumentNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 34</value>
+  </data>
+  <data name="lblMandatoryDocumentNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryDocumentNo.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="lblMandatoryDocumentNo.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryDocumentNo.Name" xml:space="preserve">
+    <value>lblMandatoryDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryDocumentNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryDocumentNo.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txtDocumentNo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDocumentNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 31</value>
+  </data>
+  <data name="txtDocumentNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtDocumentNo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentNo.Name" xml:space="preserve">
+    <value>txtDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentNo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblDocumentNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 34</value>
+  </data>
+  <data name="lblDocumentNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="lblDocumentNo.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="lblDocumentNo.Text" xml:space="preserve">
+    <value>Document No.</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentNo.Name" xml:space="preserve">
+    <value>lblDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentNo.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblDocumentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 8</value>
+  </data>
+  <data name="lblDocumentType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblDocumentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblDocumentType.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="lblDocumentType.Text" xml:space="preserve">
+    <value>Document Type</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentType.Name" xml:space="preserve">
+    <value>lblDocumentType</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDocumentType.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cboDepartment.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cboDepartment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 5</value>
+  </data>
+  <data name="cboDepartment.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboDepartment.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboDepartment.Name" xml:space="preserve">
+    <value>cboDepartment</value>
+  </data>
+  <data name="&gt;&gt;cboDepartment.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsDataLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboDepartment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboDepartment.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblDepartment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 8</value>
+  </data>
+  <data name="lblDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="lblDepartment.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;lblDepartment.Name" xml:space="preserve">
+    <value>lblDepartment</value>
+  </data>
+  <data name="&gt;&gt;lblDepartment.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDepartment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDepartment.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="cboDocumentNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 31</value>
+  </data>
+  <data name="cboDocumentNo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboDocumentNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cboDocumentNo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cboDocumentNo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;cboDocumentNo.Name" xml:space="preserve">
+    <value>cboDocumentNo</value>
+  </data>
+  <data name="&gt;&gt;cboDocumentNo.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.Inventory.IvsInventoryDocumentLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboDocumentNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboDocumentNo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblQualityStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 8</value>
+  </data>
+  <data name="lblQualityStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 3, 3, 3</value>
+  </data>
+  <data name="lblQualityStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="lblQualityStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="lblQualityStatus.Text" xml:space="preserve">
+    <value>Quality Status</value>
+  </data>
+  <data name="&gt;&gt;lblQualityStatus.Name" xml:space="preserve">
+    <value>lblQualityStatus</value>
+  </data>
+  <data name="&gt;&gt;lblQualityStatus.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblQualityStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblQualityStatus.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cboQualityStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 4</value>
+  </data>
+  <data name="cboQualityStatus.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboQualityStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="cboQualityStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cboQualityStatus.Name" xml:space="preserve">
+    <value>cboQualityStatus</value>
+  </data>
+  <data name="&gt;&gt;cboQualityStatus.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsCodeLookUp, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboQualityStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboQualityStatus.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtDocumentType.EditValue" xml:space="preserve">
+    <value>Shipping from Storage</value>
+  </data>
+  <data name="txtDocumentType.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDocumentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 5</value>
+  </data>
+  <data name="txtDocumentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 20</value>
+  </data>
+  <data name="txtDocumentType.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType.Name" xml:space="preserve">
+    <value>txtDocumentType</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtDocumentType2.EditValue" xml:space="preserve">
+    <value>Arriving in Storage</value>
+  </data>
+  <data name="txtDocumentType2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDocumentType2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 5</value>
+  </data>
+  <data name="txtDocumentType2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 20</value>
+  </data>
+  <data name="txtDocumentType2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType2.Name" xml:space="preserve">
+    <value>txtDocumentType2</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType2.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentType2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblMandatoryQuanlityStatus.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblMandatoryQuanlityStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 7</value>
+  </data>
+  <data name="lblMandatoryQuanlityStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lblMandatoryQuanlityStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="lblMandatoryQuanlityStatus.Text" xml:space="preserve">
+    <value>(*)</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryQuanlityStatus.Name" xml:space="preserve">
+    <value>lblMandatoryQuanlityStatus</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryQuanlityStatus.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryQuanlityStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMandatoryQuanlityStatus.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtPrintReason.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtPrintReason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 31</value>
+  </data>
+  <data name="txtPrintReason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 20</value>
+  </data>
+  <data name="txtPrintReason.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="txtPrintReason.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtPrintReason.Name" xml:space="preserve">
+    <value>txtPrintReason</value>
+  </data>
+  <data name="&gt;&gt;txtPrintReason.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPrintReason.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtPrintReason.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtNo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 31</value>
+  </data>
+  <data name="txtNo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtNo2.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="txtNo2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtNo2.Name" xml:space="preserve">
+    <value>txtNo2</value>
+  </data>
+  <data name="&gt;&gt;txtNo2.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsTextEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNo2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtNo2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSearch.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="btnSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA95JREFUSEu1lX1M
+        E3cYxw/L4kJ8q0OGQkh8WczExAg2IyS+IFaIoPGlgDZFIFhZNJtsmbolZtEFdP5h+GeRpmZL5qL/qBNf
+        hyl9oSAt1NL24CrVitAKXF8Vg2XbP+fznHezNMcRtuyXfNLLPc/z+f5+vV5KMAzzvzLtWp13hNh5rJ/Y
+        /fVjQnnKR1T/QBO1jSGZ+lxEC1BAjAOvtVjDHuzFGZxlA1CUCBZ5uADpwdOjzbUNY74fr9Ddl9vo+1ZP
+        1OQZmbAYHa+NP90IP8Ia9mDvlIB4mRDQLC076X1wrGnI3mId0+lI2mTzRjtfRGK98RjJiAF7sBdncJYN
+        KD7SK0rJF67murMD9j8ctB7lhv6AaSj45lFiAN7TuQKGz88N2HEGZ9mAjVUd07KpulMmr7P4bnSNsDtH
+        rE8jHYlyHqy1WEb12+ssfpxlA2QVOjG09Rcc3W19dDsfMBNtfYH2b5qcNpxlA9buuiUGdbHlSWt8gIkK
+        tvf5xrsGAxO2xBM8oyd6sOfSHa8OZ9mAT4quixFr7R2DXb3f4TMBMc9wCJ4D9BjIQCfOsgErtl0TI9bm
+        pM14bD5ASBwP9pj7g104ywaslP8uBgXH1RupYMdsAi7fH2zHWe4ruieG9svzvfbupxEbH+ALx+xCYgRr
+        5sehruMXXCTOsgGfluinZU2pQZarMPuNrlBP50DIggH4IIXkCD54c1/YvqHM7MdZNiA/P18Mac7OazeV
+        J91OcmicfOgJWyn/uFVIPhqddPqCMXfld25y/T5b87o91ncvmoCUZ3FeXt6evRWHf6motzHVpwZdPQOv
+        SPgVuelXf1IoHIlOOsZeTpLh1395Bkcmn6jPPO//7ID7wYZylzRHwb3JAmIkFeTlCkWZ5vbtu0yBXHF1
+        fcnNu9vUPn/jzyHK7Jhwhsb/HgKGHzrfkE2/RT3b6/z+jVXDzfkqrxQCCLGANJCryssrNK2tembz5i2/
+        pqSkVGWuqUktqKVlWw8FtQAFxDjwWou1TdV+AgIIsYB0kNfs36/UmEwWpqBgK8rVycnJaRBAgIQoVIcE
+        wdpMAUtBflipVGksFpIpLJSj/CjI0wFiYVrOfwrIAPlRlapK43B4Gbm8COVfgXiZRCIhkpKSuP+52S02
+        IDs7mwB5fWVljcbtfsEUFe1A+bcgzvy3Yn6xAbAkubm5J7zeMFNcXIry70G8Eu5/wJEch4RjThy4C54p
+        iw9YkpWVVZqRkXEa5A0g3wL3VgEYshzIAjKBpUAa8BGwCJgPpABzAdwIH/zP4gMWAKkACpZxn+nAxwAK
+        sbYYQCn2zgNQ/CGQKJ9yCoZhiLdThCtwE+pw+gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 27</value>
+  </data>
+  <data name="btnSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 27</value>
+  </data>
+  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnSearch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsSimpleButton, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtRemark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 59</value>
+  </data>
+  <data name="txtRemark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>575, 45</value>
+  </data>
+  <data name="txtRemark.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;txtRemark.Name" xml:space="preserve">
+    <value>txtRemark</value>
+  </data>
+  <data name="&gt;&gt;txtRemark.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsMemoEdit, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtRemark.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtRemark.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblRemark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 62</value>
+  </data>
+  <data name="lblRemark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblRemark.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="lblRemark.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;lblRemark.Name" xml:space="preserve">
+    <value>lblRemark</value>
+  </data>
+  <data name="&gt;&gt;lblRemark.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblRemark.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblRemark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>860, 219</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>STStockTransfer01UC</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.Inventory.StockUserControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

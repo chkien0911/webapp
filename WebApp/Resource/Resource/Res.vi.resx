@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="COM_LBL_ADD" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="COM_LBL_BACK" xml:space="preserve">
+    <value>Trở về</value>
+  </data>
+  <data name="COM_LBL_CANCEL" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="COM_LBL_CLOSE" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="COM_LBL_COPY" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="COM_LBL_DELETE" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="COM_LBL_DETAIL" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="COM_LBL_EDIT" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="COM_LBL_ENGLISH" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
+  <data name="COM_LBL_EXPORT" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="COM_LBL_IMPORT" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="COM_LBL_JAPANESE" xml:space="preserve">
+    <value>Tiếng Nhật</value>
+  </data>
+  <data name="COM_LBL_MESSAGE_TITLE" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_CODE" xml:space="preserve">
+    <value>Mã Mặt Hàng</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_GROUPCODE" xml:space="preserve">
+    <value>Mã Nhóm</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_GROUPNAME" xml:space="preserve">
+    <value>Tên Nhóm</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_INVUNITCODE" xml:space="preserve">
+    <value>Đơn Vị Lưu Kho</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_NAME1" xml:space="preserve">
+    <value>Tên Mặt Hàng (VN)</value>
+  </data>
+  <data name="COM_LBL_MS_ITEM_NAME2" xml:space="preserve">
+    <value>Tên Mặt Hàng (EN)</value>
+  </data>
+  <data name="COM_LBL_MS_UNIT_CONVERT_FACTOR" xml:space="preserve">
+    <value>Hệ Số</value>
+  </data>
+  <data name="COM_LBL_MS_UNIT_CONVERT_FROM_UNIT" xml:space="preserve">
+    <value>Từ Đơn Vị</value>
+  </data>
+  <data name="COM_LBL_MS_UNIT_CONVERT_TO_UNIT" xml:space="preserve">
+    <value>Đến Đơn Vị</value>
+  </data>
+  <data name="COM_LBL_NO" xml:space="preserve">
+    <value>Không đồng ý</value>
+  </data>
+  <data name="COM_LBL_OK" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="COM_LBL_PRINT" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="COM_LBL_REFRESH" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="COM_LBL_SAVE" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="COM_LBL_SAVEANDNEXT" xml:space="preserve">
+    <value>Lưu &amp; Tiếp tục</value>
+  </data>
+  <data name="COM_LBL_SEARCH" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="COM_LBL_VIETNAMESE" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="COM_LBL_YES" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="COM_MSG_ACCESS_DENIED" xml:space="preserve">
+    <value>99-Không thể truy cập.</value>
+  </data>
+  <data name="COM_MSG_ACT_FAILED" xml:space="preserve">
+    <value>97-{0} thất bại.</value>
+  </data>
+  <data name="COM_MSG_ACT_SUCCESSFULLY" xml:space="preserve">
+    <value>97-{0} thành công.</value>
+  </data>
+  <data name="COM_MSG_ACT_SUCCESSFULLY_AND_ROWS" xml:space="preserve">
+    <value>97-{0} thành công: {1} dòng.</value>
+  </data>
+  <data name="COM_MSG_BETWEEN" xml:space="preserve">
+    <value>99-{0} must be between {1} and {2}.</value>
+  </data>
+  <data name="COM_MSG_CANCEL_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Hủy bỏ thành công.</value>
+  </data>
+  <data name="COM_MSG_CAN_NOT_PRINT" xml:space="preserve">
+    <value>98-Không thể in nhiều hơn {0} lần.</value>
+  </data>
+  <data name="COM_MSG_CONCURRENCY_VIOLATION" xml:space="preserve">
+    <value>99-Dữ liệu đã bị quá hạn.</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_ACT" xml:space="preserve">
+    <value>96-Bạn có muốn {0} không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_CANCEL" xml:space="preserve">
+    <value>96-Bạn có muốn hủy bỏ dữ liệu không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_CLEAR" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa trắng hết dữ liệu?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_CLOSE" xml:space="preserve">
+    <value>96-Bạn có muốn đóng kỳ này không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_DELETE" xml:space="preserve">
+    <value>96-Bạn có muốn xóa không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_DISCONNECT" xml:space="preserve">
+    <value>96-Bạn có muốn ngắt kết nối không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_EXIT" xml:space="preserve">
+    <value>96-Thông tin đã được thay đổi. Bạn có muốn lưu trước khi thoát không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_LOCK" xml:space="preserve">
+    <value>96-Bạn có chắc chắn bạn muốn khóa kỳ này?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_OPEN" xml:space="preserve">
+    <value>96-Bạn có muốn mở kỳ này không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_PRINT" xml:space="preserve">
+    <value>96-Bạn có muốn in không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_PROCESS" xml:space="preserve">
+    <value>96-Bạn có chắc chắn bạn muốn xử lí?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_SAVE" xml:space="preserve">
+    <value>96-Bạn có muốn lưu dữ liệu không?</value>
+  </data>
+  <data name="COM_MSG_CONFIRM_UNLOCK" xml:space="preserve">
+    <value>96-Bạn có chắc chắn bạn muốn mở khóa kỳ này?</value>
+  </data>
+  <data name="COM_MSG_CONNECTION_LOST" xml:space="preserve">
+    <value>99-Không thể kết nối.</value>
+  </data>
+  <data name="COM_MSG_CURRENT_PERIOD_NOT_ENTRY_PRICE" xml:space="preserve">
+    <value>99-Kỳ {0} chưa được nhập giá.</value>
+  </data>
+  <data name="COM_MSG_DATA_BEING_USED" xml:space="preserve">
+    <value>99-Không thể thay đổi {0}, dữ liệu đã được sử dụng.</value>
+  </data>
+  <data name="COM_MSG_DATA_IN_OUT_NOT_FOUND" xml:space="preserve">
+    <value>99-Không có dữ liệu đầu vào/đầu ra, bạn không thể đóng kỳ này.</value>
+  </data>
+  <data name="COM_MSG_DATA_NOT_FOUND" xml:space="preserve">
+    <value>99-Không tìm thấy dữ liệu.</value>
+  </data>
+  <data name="COM_MSG_DATA_OF_BEING_USED" xml:space="preserve">
+    <value>Không thể thay đổi [{1}] của [{0}], dữ liệu đang được sử dụng.</value>
+  </data>
+  <data name="COM_MSG_DATA_OR_FILE_NOT_FOUND" xml:space="preserve">
+    <value>99-Không tìm thấy [{0}] .</value>
+  </data>
+  <data name="COM_MSG_DEADLOCK_FOUND" xml:space="preserve">
+    <value>99-Đã xảy ra việc trì trệ hệ thống(deadlock).</value>
+  </data>
+  <data name="COM_MSG_DELETE_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Xóa thành công.</value>
+  </data>
+  <data name="COM_MSG_DISCONNECT_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Ngắt kết nối thành công.</value>
+  </data>
+  <data name="COM_MSG_DUPPLICATE_KEY" xml:space="preserve">
+    <value>99-Dữ liệu đã tồn tại. Xin vui lòng nhập lại!</value>
+  </data>
+  <data name="COM_MSG_EXISTED" xml:space="preserve">
+    <value>99-[{0}] đã tồn tại.</value>
+  </data>
+  <data name="COM_MSG_EXPORT_NOT_FLOW" xml:space="preserve">
+    <value>Không thể xuất thông tin cho loại sản phẩm này!</value>
+  </data>
+  <data name="COM_MSG_EXPORT_SUCCESSFULLY1" xml:space="preserve">
+    <value>95-Xuất thành công!</value>
+  </data>
+  <data name="COM_MSG_FACTOR_REQUIRED" xml:space="preserve">
+    <value>99-Line {0}: {1} bắt buộc nhập và phải lớn {2}.</value>
+  </data>
+  <data name="COM_MSG_FILE_BEING_USED" xml:space="preserve">
+    <value>99-Không thể truy cập tập tin [{0}] vì tập tin đang được mở bởi chương trình khác.</value>
+  </data>
+  <data name="COM_MSG_FILE_FORMAT_INVALID" xml:space="preserve">
+    <value>99-Định dạng tập tin không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_FILE_NUM_OF_COLUMN_INVALID" xml:space="preserve">
+    <value>99-Số lượng cột không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_FILE_NUM_OF_ROW_INVALID" xml:space="preserve">
+    <value>99-Số lượng dòng không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_FOREIGN_KEY_NOT_EXIST" xml:space="preserve">
+    <value>99-Khóa ngoại không tồn tại.</value>
+  </data>
+  <data name="COM_MSG_FOREIGN_KEY_VIOLATION" xml:space="preserve">
+    <value>99-Không thể xóa, dữ liệu đang được sử dụng.</value>
+  </data>
+  <data name="COM_MSG_GENERAL_EXCEPTION" xml:space="preserve">
+    <value>99-Đã xảy ra lỗi hệ thống.</value>
+  </data>
+  <data name="COM_MSG_GREATER_THAN" xml:space="preserve">
+    <value>99-[{0}] phải lớn hơn [{1}]!</value>
+  </data>
+  <data name="COM_MSG_GREATER_THAN_OR_EQUAL" xml:space="preserve">
+    <value>99-[{0}] phải lớn hơn hoặc bằng [{1}]!</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_DUPPLICATED" xml:space="preserve">
+    <value>99-Danh sách xuất/nhập trên lưới {0} và lưới {1} bị trùng lắp.</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_LINE_EXISTED" xml:space="preserve">
+    <value>99-Lưới [{0}]: Dòng [{1}]: [{2}] đã tồn tại.</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_LINE_GREATER_THAN" xml:space="preserve">
+    <value>99-Lưới {0}: Dòng {1} - [{2}] phải lớn hơn [{3}]!</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_LINE_INVALID" xml:space="preserve">
+    <value>99-Lưới {0}: Dòng {1} - [{2}] không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_LINE_REQUIRED" xml:space="preserve">
+    <value>99-Lưới {0}: Dòng {1} - [{2}] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_GRID_DETAIL_REQUIRED" xml:space="preserve">
+    <value>99-Danh sách các giao dịch nghiệp vụ [{0}] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_GRID_INVENTORY_COUNTED_QTY_REQUIRED" xml:space="preserve">
+    <value>99-Dòng [{0}]: [{1}] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_GRID_INVENTORY_DUPLICATED" xml:space="preserve">
+    <value>99-Danh sách Mã hàng trong kho bị trùng.</value>
+  </data>
+  <data name="COM_MSG_GRID_INVENTORY_REQUIRED" xml:space="preserve">
+    <value>99-Danh sách Mã hàng trong kho bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_EXISTED" xml:space="preserve">
+    <value>99-Dòng [{0}]: [{1}] đã tồn tại.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_FG_NOT_OK" xml:space="preserve">
+    <value>98-Dòng {0}: Đây là sản phẩm NG, QI, NC.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_GREATER_THAN" xml:space="preserve">
+    <value>99-Dòng {0}: [{1}] phải lớn hơn [{2}]!</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_INVALID" xml:space="preserve">
+    <value>99-Dòng {0}: [{1}] không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_LESS_THAN_OR_EQUAL" xml:space="preserve">
+    <value>99-Line {0}: [{1}] phải nhỏ hơn hoặc bằng [{2}]!</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_PRODUCT_AND_FREE_PRODUCT" xml:space="preserve">
+    <value>98-Dòng {0}: Đây là Hàng gia công/Sản phẩm.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_REQUIRED" xml:space="preserve">
+    <value>99-Dòng {0}: [{1}] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_GRID_LINE_WIP" xml:space="preserve">
+    <value>98-Dòng {0}: Đây là sản phẩm WIP.</value>
+  </data>
+  <data name="COM_MSG_GRID_RECORD_OF_TOTAL" xml:space="preserve">
+    <value>Mẫu tin {0} của {1}</value>
+  </data>
+  <data name="COM_MSG_GRID_REQUIRED" xml:space="preserve">
+    <value>99-Danh sách các giao dịch nghiệp vụ bắt buộc nhập!</value>
+  </data>
+  <data name="COM_MSG_HAS_INVENTORY" xml:space="preserve">
+    <value>99-Sản phẩm đã có tồn kho.</value>
+  </data>
+  <data name="COM_MSG_HAVING_CHANGE" xml:space="preserve">
+    <value>96-Thông tin đã được thay đổi. Bạn có muốn lưu dữ liệu trước khi thoát không?</value>
+  </data>
+  <data name="COM_MSG_HEADERGRID_DRAG" xml:space="preserve">
+    <value>Kéo thả tiêu đề của cột vào đây để nhóm theo cột đó!</value>
+  </data>
+  <data name="COM_MSG_IMPORT_LINE_INVALID" xml:space="preserve">
+    <value>99-Dòng {0}: Cột [{1}] không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_IMPORT_LINE_NOT_EXIST" xml:space="preserve">
+    <value>99-Dòng {0}: Cột [{1}] không tồn tại.</value>
+  </data>
+  <data name="COM_MSG_INSERT_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Thêm mới thành công.</value>
+  </data>
+  <data name="COM_MSG_INVALID_ADJUSTMENTDATE" xml:space="preserve">
+    <value>99-Ngày Điều Chỉnh phải thuộc ngày trong kì.</value>
+  </data>
+  <data name="COM_MSG_INVALID_DATABASE" xml:space="preserve">
+    <value>99-Không tìm thấy Cơ sở dữ liệu. </value>
+  </data>
+  <data name="COM_MSG_INVALID_DATA_OR_ACTION" xml:space="preserve">
+    <value>99-{0} không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_INVALID_EMAIL" xml:space="preserve">
+    <value>99-[Địa chỉ Email] không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_INVALID_HOST" xml:space="preserve">
+    <value>99-Thông tin Máy chủ không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_INVOICE_CANCEL_FAIL_1" xml:space="preserve">
+    <value>99-Hóa đơn này đã bị hủy!</value>
+  </data>
+  <data name="COM_MSG_INVOICE_CANCEL_FAIL_2" xml:space="preserve">
+    <value>99-Số hóa đơn chưa nhập.</value>
+  </data>
+  <data name="COM_MSG_INVOICE_CANCEL_FAIL_3" xml:space="preserve">
+    <value>99-Hóa đơn này chưa được in.</value>
+  </data>
+  <data name="COM_MSG_INVOICE_QUANTITY_NOT_ENOUGH" xml:space="preserve">
+    <value>99-Dòng {0}: Số lượng xuất hàng không đủ. Mã chứng từ: {1}</value>
+  </data>
+  <data name="COM_MSG_LENGTH_INVALID" xml:space="preserve">
+    <value>99-Độ dài của {0} không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_LENGTH_MAXIMUM" xml:space="preserve">
+    <value>99-Độ dài tối đa của {0} là {1}.</value>
+  </data>
+  <data name="COM_MSG_LESS_THAN" xml:space="preserve">
+    <value>99-[{0}] phải nhỏ hơn [{1}]!</value>
+  </data>
+  <data name="COM_MSG_LESS_THAN_OR_EQUAL" xml:space="preserve">
+    <value>99-[{0}] phải nhỏ hơn hoặc bằng [{1}]!</value>
+  </data>
+  <data name="COM_MSG_LOCK_WAIT_TIMEOUT_EXCEEDED" xml:space="preserve">
+    <value>99-Vượt quá thời gian truy cập hệ thống</value>
+  </data>
+  <data name="COM_MSG_MATCHED_PASSWORD" xml:space="preserve">
+    <value>99-[{0}] phải khớp với [{1}]!</value>
+  </data>
+  <data name="COM_MSG_MORE_ONE_ROW_SELECTED" xml:space="preserve">
+    <value>98-Có nhiều hơn 1 dòng được chọn.</value>
+  </data>
+  <data name="COM_MSG_MS_DEPARTMENT_CODE" xml:space="preserve">
+    <value>99-[Mã Phòng Ban] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_MS_DEPARTMENT_NAME1" xml:space="preserve">
+    <value>99-[Tên Phòng Ban (VN)] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_MS_DEPARTMENT_NAME2" xml:space="preserve">
+    <value>99-[Tên Phòng Ban (EN)] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_NEXT_PERIOD_NOT_LOCK" xml:space="preserve">
+    <value>99-Kỳ {0} chưa được khóa.</value>
+  </data>
+  <data name="COM_MSG_NEXT_PERIOD_NOT_UNLOCK" xml:space="preserve">
+    <value>99-Kỳ {0} chưa được mở khóa.</value>
+  </data>
+  <data name="COM_MSG_NOT_EQUAL" xml:space="preserve">
+    <value>99-[{0}] phải khác [{1}]!</value>
+  </data>
+  <data name="COM_MSG_NOT_EXIST" xml:space="preserve">
+    <value>99-[{0}] không tồn tại!</value>
+  </data>
+  <data name="COM_MSG_NOT_MATCH" xml:space="preserve">
+    <value>99-[{0}] chưa trùng khớp [{1}].</value>
+  </data>
+  <data name="COM_MSG_NOT_MATCH_WARNING" xml:space="preserve">
+    <value>98-[{0}] chưa trùng khớp [{1}]</value>
+  </data>
+  <data name="COM_MSG_NOT_OPEN_PERIOD" xml:space="preserve">
+    <value>99-Kỳ trước chưa được đóng, bạn không thể mở kỳ này.</value>
+  </data>
+  <data name="COM_MSG_NOT_PERMISSION_EDIT" xml:space="preserve">
+    <value>99-Bạn không có quyền thao tác dữ liệu hệ thống.</value>
+  </data>
+  <data name="COM_MSG_NOT_PERMISSION_VIEW" xml:space="preserve">
+    <value>99-Bạn không có quyền xem.</value>
+  </data>
+  <data name="COM_MSG_NOT_REOPEN_PERIOD" xml:space="preserve">
+    <value>99-Bạn không thể mở kỳ này.</value>
+  </data>
+  <data name="COM_MSG_NO_ROW_SELECTED" xml:space="preserve">
+    <value>98-Không có dòng nào được chọn.</value>
+  </data>
+  <data name="COM_MSG_NUM_OF_ROW_INVOICE_INVALID" xml:space="preserve">
+    <value>99-Số lượng chi tiết hóa đơn trên lưới không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_PERIOD_NOT_UNLOCK" xml:space="preserve">
+    <value>99-Bạn không thể mở khóa cho kỳ này.</value>
+  </data>
+  <data name="COM_MSG_PHYSICAL_CANCEL" xml:space="preserve">
+    <value>Phiếu Kiểm Kho này đã hủy.</value>
+  </data>
+  <data name="COM_MSG_PHYSICAL_COMPLETE" xml:space="preserve">
+    <value>Phiếu Kiểm Kho này đã được hoàn thành.</value>
+  </data>
+  <data name="COM_MSG_PREVIOUS_PERIOD_NOT_CLOSE" xml:space="preserve">
+    <value>99-Kỳ trước chưa được đóng.</value>
+  </data>
+  <data name="COM_MSG_PRINTER_INVALID" xml:space="preserve">
+    <value>Tên máy in không hợp lệ. Vui lòng kiểm tra cấu hình máy hình.</value>
+  </data>
+  <data name="COM_MSG_PRINT_SUCCESSFULLY" xml:space="preserve">
+    <value>95-In thành công.</value>
+  </data>
+  <data name="COM_MSG_PROCESS_NOT_VALID" xml:space="preserve">
+    <value>99-Không thể xử lí thao tác này. Thao tác không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_PROCESS_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Xử lí thành công!</value>
+  </data>
+  <data name="COM_MSG_REQUIRED" xml:space="preserve">
+    <value>99-[{0}] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_MS_ITEM_CODE" xml:space="preserve">
+    <value>99-[Mã Mặt Hàng] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_MS_ITEM_GROUPCODE" xml:space="preserve">
+    <value>99-[Mã Nhóm] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_MS_ITEM_INVUNITCODE" xml:space="preserve">
+    <value>99-[Mã Đơn Vị] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_MS_ITEM_NAME1" xml:space="preserve">
+    <value>99-[Tên Mặt Hàng (VN)] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_MS_ITEM_NAME2" xml:space="preserve">
+    <value>99-[Tên Mặt Hàng (EN)] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_REQUIRED_SELECT" xml:space="preserve">
+    <value>99-[{0}] bắt buộc chọn.</value>
+  </data>
+  <data name="COM_MSG_ROW_FOUND" xml:space="preserve">
+    <value>97-{0} dòng đã được tìm thấy.</value>
+  </data>
+  <data name="COM_MSG_RPC_SERVER_UNAVAILABLE" xml:space="preserve">
+    <value>99-RPC server is unavailable.</value>
+  </data>
+  <data name="COM_MSG_SAME_PERIOD" xml:space="preserve">
+    <value>99-[{0}], [{1}] phải cùng kỳ.</value>
+  </data>
+  <data name="COM_MSG_SIZE_LIMITED" xml:space="preserve">
+    <value>99-Dung lượng file đã vượt quá giới hạn cho phép ({0} KB) và hệ thống không thể thực hiện tác vụ này.</value>
+  </data>
+  <data name="COM_MSG_STOCK_ARRIVING_DATE_NO_NULL" xml:space="preserve">
+    <value>99-[Ngày đến] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_CANCEL_EXIST_INVOICE" xml:space="preserve">
+    <value>99-Chứng từ này đã tồn tại hóa đơn.</value>
+  </data>
+  <data name="COM_MSG_STOCK_CANCEL_FAIL" xml:space="preserve">
+    <value>99-Hủy bỏ thất bại.</value>
+  </data>
+  <data name="COM_MSG_STOCK_CANCEL_RELATED_FAIL" xml:space="preserve">
+    <value>99-Chứng từ đã phát sinh nghiệp vụ liên quan. Không thể hủy bỏ.</value>
+  </data>
+  <data name="COM_MSG_STOCK_CUSTOMER_NO_NULL" xml:space="preserve">
+    <value>99-[Khách hàng] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_DOCUMENT_CANCELED" xml:space="preserve">
+    <value>99-Chứng từ này đã bị hủy!</value>
+  </data>
+  <data name="COM_MSG_STOCK_DOCUMENT_NO_NULL" xml:space="preserve">
+    <value>99-[Số chứng từ] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_DATA_NOT_FOUND" xml:space="preserve">
+    <value>99-Dòng {0}: [Dây chuyền sản xuất] không tìm thấy.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_MINUS_NG" xml:space="preserve">
+    <value>99-Dòng {0}: Không được phép xuất kho âm.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_MINUS_OK" xml:space="preserve">
+    <value>99-Dòng {0}: Được phép xuất kho âm.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_OUT_ENOUGH" xml:space="preserve">
+    <value>99-Dòng {0}: Hàng đủ.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_OUT_LACK" xml:space="preserve">
+    <value>99-Dòng {0}: Thiếu số lượng cần xuất kho</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_PRODUCTION_LINE_NOT_EXIST" xml:space="preserve">
+    <value>99-Dòng {0}: [Công đoạn] không tồn tại trong kho.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_QUALITY_STATUS_NOT_EXIST" xml:space="preserve">
+    <value>99-Dòng {0}: [Trạng thái] không tồn tại trong kho.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_RELATED_DOCUMENT_DATE_NOT_VALID" xml:space="preserve">
+    <value>99-Dòng {0}: Ngày của chứng từ liên quan phải nhỏ hơn hoặc bằng [Ngày Chứng Từ].</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_RELATED_DOCUMENT_QTY_NOT_VALID" xml:space="preserve">
+    <value>99-Dòng {0}: Số lượng sản phẩm của chứng từ liên quan không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_SAFETY_DANGEROUS" xml:space="preserve">
+    <value>98-Dòng {0}: Cảnh báo vi phạm tồn kho an toàn.</value>
+  </data>
+  <data name="COM_MSG_STOCK_GRID_STOCK_STOCK_TYPE_NOT_VALID" xml:space="preserve">
+    <value>99-Dòng {0}: [Loại nhập kho] không hợp lệ.</value>
+  </data>
+  <data name="COM_MSG_STOCK_ITEM_CODE_NULL" xml:space="preserve">
+    <value>99-[Mã hàng] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_MINUS_NG" xml:space="preserve">
+    <value>99-Được phép xuất kho âm.</value>
+  </data>
+  <data name="COM_MSG_STOCK_MINUS_OK" xml:space="preserve">
+    <value>97-Không được phép xuất kho âm.</value>
+  </data>
+  <data name="COM_MSG_STOCK_OUT_ENOUGH" xml:space="preserve">
+    <value>97-Đủ số lượng cần xuất kho.</value>
+  </data>
+  <data name="COM_MSG_STOCK_OUT_LACK" xml:space="preserve">
+    <value>99-Thiếu số lượng cần xuất kho.</value>
+  </data>
+  <data name="COM_MSG_STOCK_PERIOD_CLOSE" xml:space="preserve">
+    <value>99-Kỳ kho đã bị đóng.</value>
+  </data>
+  <data name="COM_MSG_STOCK_PERIOD_LOCK" xml:space="preserve">
+    <value>99-Kì kiểm kho đã khóa.</value>
+  </data>
+  <data name="COM_MSG_STOCK_PERIOD_NOT_EXIST" xml:space="preserve">
+    <value>99-Kỳ kho không tồn tại.</value>
+  </data>
+  <data name="COM_MSG_STOCK_PRINT_CONFIRM" xml:space="preserve">
+    <value>96-Bạn có muốn in phiếu không?</value>
+  </data>
+  <data name="COM_MSG_STOCK_SAFETY_DANGEROUS" xml:space="preserve">
+    <value>98-Cảnh báo vi phạm tồn kho an toàn. Bạn có muốn tiếp tục không?</value>
+  </data>
+  <data name="COM_MSG_STOCK_SHIPPING_DATE_NO_NULL" xml:space="preserve">
+    <value>99-[Ngày xuất] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_SUPPLIER_NO_NULL" xml:space="preserve">
+    <value>99-[Nhà cung cấp] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_STOCK_WAREHOUSE2_NOT_EXIST" xml:space="preserve">
+    <value>99-[Kho nhận] không tồn tại.</value>
+  </data>
+  <data name="COM_MSG_STOCK_WAREHOUSE2_NO_NULL" xml:space="preserve">
+    <value>99-[Kho nhận] bắt buộc nhập.</value>
+  </data>
+  <data name="COM_MSG_TAKE_SNAPSHOT_SUCCESS" xml:space="preserve">
+    <value>Lấy Dữ Liệu thành công!</value>
+  </data>
+  <data name="COM_MSG_UPDATE_SUCCESSFULLY" xml:space="preserve">
+    <value>95-Cập nhật thành công.</value>
+  </data>
+  <data name="COM_MSG_WAREHOUSE_HAVING_COUNTSHEET" xml:space="preserve">
+    <value>99-Kho này đang kiểm kê.</value>
+  </data>
+  <data name="COM_MSG_WAREHOUSE_HAVING_STOCK" xml:space="preserve">
+    <value>99-Kho này đang có tồn kho.</value>
+  </data>
+  <data name="COM_MSG_WAREHOUSE_MAIN_NOT_TRANSFER_WIP" xml:space="preserve">
+    <value>99-Kho main không cho phép chuyển WIP</value>
+  </data>
+  <data name="MS_Departments_Copy" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Cấu Trúc &gt; Phòng Ban &gt; Sao Chép</value>
+  </data>
+  <data name="MS_Departments_Edit" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Cấu Trúc &gt; Phòng Ban &gt; Sửa</value>
+  </data>
+  <data name="MS_Departments_New" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Cấu Trúc &gt; Phòng Ban &gt; Thêm</value>
+  </data>
+  <data name="MS_Departments_Search" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Cấu Trúc &gt; Phòng Ban</value>
+  </data>
+  <data name="MS_Departments_View" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Cấu Trúc &gt; Phòng Ban &gt; Chi Tiết</value>
+  </data>
+  <data name="MS_Items_Copy" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Mặt Hàng &gt; Mặt Hàng &gt; Sao Chép</value>
+  </data>
+  <data name="MS_Items_Edit" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Mặt Hàng &gt; Mặt Hàng &gt; Sửa</value>
+  </data>
+  <data name="MS_Items_New" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Mặt Hàng &gt; Mặt Hàng &gt; Thêm</value>
+  </data>
+  <data name="MS_Items_Search" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Mặt Hàng &gt; Mặt Hàng</value>
+  </data>
+  <data name="MS_Items_View" xml:space="preserve">
+    <value>Danh Mục &gt; Quản Lý Mặt Hàng &gt; Mặt Hàng &gt; Chi Tiết</value>
+  </data>
+</root>

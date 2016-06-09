@@ -1,0 +1,134 @@
+﻿@using Ivs.Resources.Common;
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        @*<link rel="icon" href="../../favicon.ico">*@
+
+        <title>BIMS Boostrap</title>
+
+        <!-- CSS -->
+        @Styles.Render("~/Content/css")
+        <!-- Scripts -->
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/datetimepicker")
+        @Scripts.Render("~/bundles/select2")
+        @Scripts.Render("~/bundles/mainscript")
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        @*<script type="text/javascript" src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script type="text/javascript" src="../../assets/js/ie10-viewport-bug-workaround.js"></script>*@
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="/Home/Index">BIMS</a>
+              </div>
+            </div>
+        <div class="navbar-collapse collapse">
+
+            @(Html.IvsWebMenu<Ivs.Models.Systems.SYS_FunctionModel>().SetFunctions(Session["GroupMenu"] as List<Ivs.Models.Systems.SYS_FunctionModel>))
+            @*<ul class="nav navbar-nav navbar-left">
+                @{
+                    Dictionary<string, string> groupMenu = Session["GroupMenu"] as Dictionary<string, string>;
+                }
+                <li class="dropdown">
+                  <a href="">System <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">User Management</a></li>
+                    <li><a href="#">User Group Management</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">System Jounals</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Master <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                        @Html.ActionLink("Item Management", "Index", "Item")
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        @Html.ActionLink("Department Management", "Index", "Department")
+                    </li>
+                    
+                  </ul>
+                </li>
+            </ul>*@
+            @{
+                string currLanguage = CommonData.CultureInfo.English;
+                if (!CommonMethod.IsNullOrEmpty(Session["Language"]))
+                {
+                    currLanguage = CommonMethod.ParseString(Session["Language"]);
+                }
+                    
+                }
+            <ul class="nav navbar-nav navbar-right">
+                @*<li class="active"><div class="navbar-brand">BORAMTEK WAREHOUSE MANAGEMENT SYSTEM</div></li>*@
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <span class="caret"></span></a>
+                  <ul id="ulLanguage" class="dropdown-menu" role="menu">
+                    <li>
+                        <a id="language-vn" href="#" onclick="changeLanguage('@currLanguage', '@CommonData.CultureInfo.VietNamese'); setActive(this); return false;">@I18n.GetMessage("COM_LBL_VIETNAMESE")</a>
+                    </li>
+                    <li>
+                        <a id="language-en" href="#" onclick="changeLanguage('@currLanguage', '@CommonData.CultureInfo.English'); ; setActive(this); return false;">@I18n.GetMessage("COM_LBL_ENGLISH")</a>
+                    </li>
+                    <li>
+                        <a id="language-ja" href="#" onclick="changeLanguage('@currLanguage', '@CommonData.CultureInfo.Japanese'); ; setActive(this); return false;">@I18n.GetMessage("COM_LBL_JAPANESE")</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="/Account/Login">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+        @{string siteMap = CommonMethod.ParseString(ViewBag.SiteMap);}
+        @Html.Partial("_SiteMapPartial", siteMap)
+
+        <div class="content-wrapper" id="content-wrapper">
+            @RenderBody()
+        </div>
+
+        <div class="footer">
+            <div class="container-fluid">
+                    <p class="text-left">@@Demo ver1</p>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        @Html.Partial("_ModalPartial")
+
+        <!-- Export -->
+        <iframe id="iframeExportFile" style="width: 400px; display: none;"></iframe>
+
+    </body>
+</html>

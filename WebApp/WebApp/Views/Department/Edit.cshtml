@@ -1,0 +1,30 @@
+﻿@model Ivs.Models.Master.MS_DepartmentModel
+
+@{
+    ViewBag.Title = "Department Management";
+    //Layout = "~/Views/Shared/_MasterEditLayout.cshtml";
+}
+
+@section SectionEditHeader {
+     
+    <div class="form-group form-group-sm">
+        @Html.IvsHiddenFor(model => model.ID).SetPrimary()
+
+        @Html.IvsLabel("Code", "Department Code")
+        @Html.IvsTextBoxFor(model => model.Code, (CommonData.Mode)ViewBag.Mode).SetUnique().SetFocus()
+
+        @Html.IvsLabel("Name1", "Department Name (VN)")
+        @Html.IvsTextBoxFor(model => model.Name1, (CommonData.Mode)ViewBag.Mode).SetFocus()
+                        
+    </div>
+
+    <div class="form-group form-group-sm">
+        @Html.IvsLabel("Name2", "Department Name (EN)")
+        @Html.IvsTextBoxFor(model => model.Name2, (CommonData.Mode)ViewBag.Mode)
+
+        @Html.IvsLabel("Name3", "Department Name (JP)")
+        @Html.IvsTextBoxFor(model => model.Name3, (CommonData.Mode)ViewBag.Mode)
+    </div>
+}
+
+

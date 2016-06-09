@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 542</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsPanel, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblErrorMessage.Appearance.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gray</value>
+  </data>
+  <data name="lblErrorMessage.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="lblErrorMessage.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="lblErrorMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 30</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Name" xml:space="preserve">
+    <value>lblErrorMessage</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Type" xml:space="preserve">
+    <value>Ivs.Controls.CustomControls.WinForm.IvsLabelControl, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;lblErrorMessage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 572</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnPrintSheet.Caption" xml:space="preserve">
+    <value>Print Delivery Sheet</value>
+  </data>
+  <data name="btnPrintSheet.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAp5JREFUOE99kl1I
+        k1EYxw8peaEmSTGIoF3oxUSKMVCZQi7X1moz5qZM09ZN21IiTadjbs78YCKYtHBRFEm5sgtLsWQabjUy
+        3KWRUJIXmbMRZOHHhQ79d86b2GTpA7/38L7n/3vO88Ih2qambYodDhXFsAtpGrudqBsbd0DYxyiMvyIR
+        hFZWMLe8jK9LSxxDgQDYHiU9poHaao3G9HttDXOLi/gcDmN6YQEfQyF4RkbAiu0ramr4EpOJMIqMRjqB
+        RkOKDAZS2NDAuLK8vo4f9NToJrf7+rZJVyhsFHKquJhzuYdWqyWaigqirKurWqENfq6uxjRhk7DfYRmW
+        5ZytBvvoi4pijI+P7zKbzdgLlmFZ5jCXqNXqQ1ar1RGmJ5lMJrS2tsJut8dgs9nQ3NzMZebn52GxWBzM
+        JUqlUuByuXpnZmag0+lQX18Pg8EAvV4PtboIBQVS5ObmISsrGwrFWS4zOupHW1t7L3OJXC7PHxgY8AeD
+        QUilUiobIZMpkJeXT8WTO5BKz3CZoaHX6O52+5lLJBKJbnJyctbn80EoFKKkpJyGVP9FJiuEuLYXui89
+        6O9/NctcIhaLr3q9Xng8HvD5fGi1l6BSle2KyD4KpfsD2p+8BXOJSCQyBwLvMDjoRVXVNXR2utHR0QOn
+        080ht71AvvP9NuIbftwJAeduTUF4wfGUCAQC6/j4BMbGJlBaWhrD8evP4foGVE4DFVP/qP0EpFUPh0hK
+        Skp1ampqOyMuLq4jRC9MgTOEm8Mh9Lx8gxPmuzhqfIZjlXSSFh8OX3wYzpkAePpH3w9mlz0gtJIpRxi8
+        nJwW7tJH1cbmJkdkYwMRuh7Q3VtILns8lXS+y7Tl/q0EHo8kZWZeTszIcO5FwmlLcL/6fnliYRe1CPkD
+        2IoVaSsOuLUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnCancel.Caption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj9JREFUOE+djV1I
+        U3EYxt/8SF3iRZqzWZRdzBvTokZFgiPqolII+pCC3ci5CFHzJmuKha26iFZUs5xDRyEk+TFMHKmRRQbT
+        DvYBhw0ndoKEswwOAwNh0b/3kQKPQkGDH8//ed7nPCMhBO2+PU22OzO0r1WlUu8XKuvQyN4Z8zIyFB45
+        7uihj+/AqoG9nk9U2j4HZI8qBBQe+b8GTFxy7rk328bgA/lm5KeAwiPHHb1VAztvKLTLHXE6BmIqq8zA
+        y9c//hDL/ZmAhrsTfcNA0dV3toPtUaUp9D2x/dp7mSHo5beLYrm/ML6QONA2raBvGChsDrlrRuf1io5Z
+        jd8uBpl88fWCgP72rnK+S4Mxnd9uw0DB+ZfBxjdxUdISCm9reGVlkMmN43EBhUeOe/3IN2RBw4Cl9tlE
+        XXBObK4fmeJ3Wn7dMDFefstQeOS4S09Ugb5hIEcKBKsHP4uCc8FwthSwZlf14QPKqx5aUnjkuDu6IgJ9
+        w0CWo9td7vugF18a0/jtyjzdlZx+wk9/gEde1Dym2W9N6ugbBkyVj2ybagaUQ49VsaF2aCbj1EMXf2hl
+        0qDwyPf7Z4T5bL+CvmFg7fFOSjnmc25peqGW9M2L9VcmtQypP5x60j8Fhbd2fxXmhucqeugbBvBLKqww
+        rTl637lO6lUsD6L6xt54IvfposjtiSdyPFE9vapHwR099FcOpDB5TDFtLaske4uPDt8dpiOtE0sKj5xo
+        B5PPpK4cSGIyGTNj+Qv4kywm2TDw/wj6BR0nCsSEDOr0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnInventory.Caption" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="btnInventory.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAJXSURBVDhPpZNtT1JhHMb7CH4EPwLjJa/4BmgPMLZKwDUwlAdnlIAbGIKWJuA8FDKyGuiLOkxr
+        lbOkNzSbEtnGMpcVPk0BPYoPqOC5ug+cZkxda13btXOfs/v67Tr3+Z9zf8rR0y92+59EPIFwgnr8jLE4
+        PdHGm+0GpdZUxW85Xe13+6o6Pf7IQHgEoxNxRKfmMUFMv/mILt8QVPo25nxdo4DfflLO3vuR0MhbfP6W
+        xXK2iFWGxcoGi1S6gPjXDdy6R6OuycrUXrl+EtLte1TTP/gUs6lNZLaATA7IEnPrNPHqJjA2lYHRFYJc
+        fSPKx45l6XBHnpPaXGAxC/xMA0vrZcBv0NwKC4r+gmstDtRe1Vbz0bLMzj5mOrmI9W1gcxfYIubWHCyV
+        IS1Ig+9rpEV8CzqbD9J6o5iPltVguo3p5EIpuJ0HdvbL19wesLED/CCNZpeBD3OHaHE9xOUGUyVAoWtL
+        jMdmsEuC+UNgnzh/gNI9B+FazS4BseQuzHcCqNdbKwGXVPreLl+YhI5QOAIKReCgUIZwbbiDnFsBXrxf
+        gKWTYvjYsbSW7mruE72bnAHLsmABFAmIa5Ijr8Kdxaf5PKjQK7Q63DY+VqkLiqYaldGO0fEYctt7BMCW
+        GiyvFzGZTOPB8BhaO7wwtbsjMpns9IG6qNQJSJNos92DwPBLDNITGBh+jR7/EGN2em3Ndm/CbLFCIpEw
+        Go3m7KlU6cwCvdmpIPNhs7q84mAwWPoPaJpWUBQFqVT6d8hZUqvVFRC5XP5/EJFIlOYf/5uUSqXCYDBA
+        KBQqfgF38NyAWUEbCwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="InventoryEditForm.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 630</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>InventoryEditForm</value>
+  </data>
+  <data name="&gt;&gt;btnPrintSheet.Name" xml:space="preserve">
+    <value>btnPrintSheet</value>
+  </data>
+  <data name="&gt;&gt;btnPrintSheet.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnInventory.Name" xml:space="preserve">
+    <value>btnInventory</value>
+  </data>
+  <data name="&gt;&gt;btnInventory.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InventoryEditForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Ivs.Controls.Forms.MasterEditForm, Ivs.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

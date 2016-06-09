@@ -1,0 +1,25 @@
+﻿@model IPagedList<Ivs.Models.Master.MS_ItemModel>
+@using GridMvc.Html;
+@using Ivs.Models.Master;
+
+@Html.Partial("_ErrorMessagePartial")
+                    
+@(Html.IvsDataGrid<MS_ItemModel>(this.Model)
+            .Columns(col =>
+            {
+                col.Add(x => x.ID).SetPrimary().SetHidden();
+                col.Add(x => x.Code);
+                col.Add(x => x.Name1);
+                col.Add(x => x.Name2);
+                col.Add(x => x.GroupName);
+            })
+            .SetPagination()
+            .GenerateCheckedColumn()
+            
+)
+<script type="text/javascript">
+    $(this.document).ready(function () {
+        $('select.combobox').select2();
+
+    });
+</script>

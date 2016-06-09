@@ -1,0 +1,39 @@
+﻿@model IPagedList<Ivs.Models.Master.MS_ItemModel>
+@using Ivs.Controls.CustomControls.Infrastructure;
+@using Ivs.Models.Master;
+
+@{
+    ViewBag.Title = "Item Management";
+}
+
+@section SectionSearchCondition {
+    <div class="form-group form-group-sm">
+        <!-- Solution 1 (Strong-type) : model is nested inside IEnumrable<model> -->
+        @*@(Html.HtmlHelperFor<MS_ItemModel>().IvsLabelFor(model => model.Code))*@
+        @Html.IvsLabel("Code", Html.IvsResource("COM_LBL_MS_ITEM_CODE").ToString())
+        @(Html.HtmlHelperFor<MS_ItemModel>(ViewBag.Model as MS_ItemModel).IvsTextBoxFor(model => model.Code).SetFocus())
+
+        <!-- Solution 2 (Non strong-type)-->
+        @*@Html.IvsLabel("Code", Html.IvsResource("COM_MSG_LBL_MS_ITEM_CODE").ToString())
+        @Html.IvsTextBox("Code", ViewBag.Code as string).SetFocus()*@
+
+        @Html.IvsLabel("Code", Html.IvsResource("COM_LBL_MS_ITEM_NAME1").ToString())
+        @(Html.HtmlHelperFor<MS_ItemModel>(ViewBag.Model as MS_ItemModel).IvsTextBoxFor(model => model.Name1))
+                        
+    </div>
+
+    <div class="form-group form-group-sm">
+        @Html.IvsLabel("Code", Html.IvsResource("COM_LBL_MS_ITEM_NAME2").ToString())
+        @(Html.HtmlHelperFor<MS_ItemModel>(ViewBag.Model as MS_ItemModel).IvsTextBoxFor(model => model.Name2))
+
+        @Html.IvsLabel("Code", Html.IvsResource("COM_LBL_MS_ITEM_GROUPCODE").ToString())
+        @Html.IvsDropDownList("GroupCode", ViewBag.GroupCodeList as SelectList)
+    </div>
+
+
+}
+
+@section SectionSearchResult {
+    @{Html.RenderPartial("ItemPartial", Model);}
+}
+

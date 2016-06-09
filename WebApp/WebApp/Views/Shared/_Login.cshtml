@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+@*<script type="text/javascript">
+    $.document(function () {
+        $('#Login').click(function (event) {
+            event.preventDefault();
+            if ($('form').valid()) {
+                $('form').submit();
+            }
+        });
+    });
+
+</script>*@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Login</title>
+
+    <!-- CSS -->
+    @Styles.Render("~/Content/css")
+    <!-- Custom styles for this template -->
+    <link href="@Url.Content("~/Content/signin.css")" rel="stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datetimepicker")
+    @Scripts.Render("~/bundles/select2")
+    @Scripts.Render("~/bundles/mainscript")
+  </head>
+
+  <body>
+
+    <div class="container">
+    <h3 class="text-center">BORAMTEK INVENTORY MANAGEMENT SYSTEM</h3>
+        @using (Html.BeginForm(
+            //Action
+                            @ViewContext.RouteData.Values["action"] as string //"Index"
+            //Controller
+                            , @ViewContext.RouteData.Values["controller"] as string//"Department"
+            //AjaxOptions
+                            , FormMethod.Post
+            //HtmlAttributes
+                            , new { @id = "editForm", @class = "form-signin", @role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false)
+
+            @Html.IvsTextBox("UserName").SetNoWrap().SetFocus().SetMaxLength(50)
+            @Html.IvsTextBox("Password").SetNoWrap().SetMaxLength(50).SetPasswordType()
+            @*<input type="email" class="form-control" placeholder="Email address" required autofocus>*@
+            @*<input type="password" class="form-control" placeholder="Password" required>*@
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+            @Html.IvsButton("Login", "Log in", CommonData.ButtonCategory.Default, CommonData.ButtonWebType.submit, new { @class = "btn-primary btn-block" })
+            @*<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>*@
+        }
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

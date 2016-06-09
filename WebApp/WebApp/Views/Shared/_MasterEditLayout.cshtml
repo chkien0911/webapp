@@ -1,0 +1,130 @@
+﻿@using Ivs.Controls.CustomControls.Infrastructure;
+
+@{
+    ViewBag.Title = "_MasterEditLayout";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var mode = '@ViewBag.Mode';
+        if (mode == 'New') {
+            //Allow input for all control on form
+            $("form :input").removeAttr("readonly");
+            $(".combobox").select2("readonly", false);
+        }
+        else if (mode == 'Edit') {
+            //Allow input for all control on form
+            //Readonly the unique control (Ex: ItemCode, DepartmentCode...)
+            $("form :input").removeAttr("readonly");
+            $(".unique-control").attr("readonly", true);
+            $(".combobox").select2("readonly", false);
+        }
+        else if (mode == 'Copy') {
+            //Allow input for all control on form
+            $("form :input").removeAttr("readonly");
+            $(".combobox").select2("readonly", false);
+        }
+        else if (mode == 'View') {
+            //Readonly all control on form
+            $("form :input").attr("readonly", true);
+            $(".combobox").select2("readonly", true);
+        }
+    });
+
+    function getCheckedIds(tableId) {
+        var checkedIds = [];
+        var table = null;
+        if (typeof tableId === "undefined" || tableId == "") {
+            table = $("#table-result tbody");
+        }
+        else {
+            table = $("#" + tableId + " tbody");
+        }
+        table.find('tr').each(function () {
+            var isChecked = $(this).find('input[name=Select][type=checkbox]').is(':checked');
+            if (isChecked) {
+                var checkedId = $(this).find('.primary-column').val();
+                checkedIds.push(checkedId);
+            }
+        });
+        //        var checkedRows = $("#searchResult input[name=Select][type=checkbox]");
+        //        for (var i = 0; i < checkedRows.length; i++) {
+        //            if (checkedRows[i].checked) {
+        //                var checkedId = $("#ID" + i).val();
+        //                checkedIds.push(checkedId);
+        //                //return checkedId;
+        //            }
+        //        }
+
+        return checkedIds;
+    };
+
+    function saveData() {
+        if ($('#editForm').valid()) {
+            showMessageBox('YesNo', '@Html.IvsResource("COM_MSG_CONFIRM_SAVE")', null, true);
+        }
+    };
+
+    function saveAndNextData() {
+        if ($('#editForm').valid()) {
+            showMessageBox('YesNo', '@Html.IvsResource("COM_MSG_CONFIRM_SAVE")', null, true);
+        }
+    };
+
+    function refreshData() {
+        //$(this).resetValidation('editForm');
+        window.location.reload(true);
+    };
+
+    function editData() {
+        var primaryValue = $(".primary-control:first").val();
+        window.location = '@Url.Action("Edit", (string)ViewContext.RouteData.Values["controller"])' + "/" + encodeURIComponent(primaryValue);
+    };
+
+    function backData() {
+        window.location = '@Url.Action("Index", (string)ViewContext.RouteData.Values["controller"])';
+    };
+
+    function printData() {
+        showMessageBox('Ok', 'Print');
+    };
+
+</script>
+
+<div class="container-fluid">
+
+    @using (Html.BeginForm(
+        //Action
+                            @ViewContext.RouteData.Values["action"] as string //"Index"
+        //Controller
+                            , @ViewContext.RouteData.Values["controller"] as string//"Department"
+        //AjaxOptions
+                            , FormMethod.Post
+        //HtmlAttributes
+                            , new { @id = "editForm", @class = "form-horizontal", @role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.ValidationSummary(false)
+                @RenderSection("SectionEditHeader", false)
+            </div>
+        </div>
+
+        if (IsSectionDefined("SectionEditButtonGroup"))
+        {
+            @RenderSection("SectionEditButtonGroup", false);
+        }
+        else
+        { 
+            @(Html.IvsButtonGroup((CommonData.Mode)ViewBag.Mode))
+        }
+            
+        @RenderSection("SectionEditDetail", false)
+
+        @RenderBody()
+    }
+</div>
+

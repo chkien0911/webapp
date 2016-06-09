@@ -1,0 +1,167 @@
+﻿html {
+  position: relative;
+  height: 70%;
+  min-height: 70%;
+}
+body {
+	/*min-height: 2000px;*/
+	padding-top: 20px;
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+	height: 70%;
+}
+
+/* main layout
+----------------------------------------------------------*/
+.content-wrapper {
+	display:block;
+	margin-bottom:10px;
+	min-height: 70%;
+}
+
+.grid-wrapper {
+    overflow: auto;
+    min-height: 300px;
+    max-height: 500px;
+    height:auto;
+}
+
+/* footer */
+.footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 35px;
+  background-color: #e7e7e7;
+  z-index: 9;
+}
+
+.footer > .container-fluid {
+	padding: 10px;
+}
+      
+/* custom page header of boostrap */
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 1px;
+  border-bottom: 1px solid #eee;
+  /* kien fix */
+  
+}
+
+/* kien fix */
+/* Show menu when hove the header */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+/* info and errors */
+.message-info {
+    border: 1px solid;
+    clear: both;
+    padding: 10px 20px;
+}
+
+.message-error {
+    clear: both;
+    color: #e80c4d;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    padding: 10px 20px;
+}
+
+.message-success {
+    clear: both;
+    color: #e80c4d;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    padding-left: 10px;
+}
+
+.error {
+    color: #e80c4d;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+
+/* fix for select2 */
+.input-validation-error a.select2-choice {
+    border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* START: Kien fixed bootstrap */
+.panel {
+  /*margin-bottom: 20px;*/
+  margin-bottom: 0px !important;
+}
+.panel-body 
+{
+	/*padding: 15px; */
+  /* Kien fixed */
+  padding: 10px !important; 
+}
+.panel-heading 
+{
+    /*kien fixed
+  padding: 10px 15px;
+*/
+    padding: 5px 15px !important;
+}
+.modal-footer {
+  /* Kien fixed
+  text-align: right; */
+  text-align: center !important;
+}
+.page-header {
+  margin: 40px 0 1px !important; 
+  
+}
+th {
+  /*text-align: left;*/
+  /*Kien fix*/
+	text-align: center !important; 
+	border: solid 1px #9ABCEF;
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	color: #777;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    /* Kien Fixed */
+    text-align: left !important;
+    padding-left: 40px !important; 
+  }
+}
+.pagination > li > span {
+  /* Kien fix */
+  /*color: #428bca;*/
+  color:#333 !important;
+}
+/* START: Kien fixed bootstrap */
